@@ -1,0 +1,42 @@
+.AboutMe {
+    color: #1340E1;
+    font-family: 'Raleway';
+    font-size: 22px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 65px;
+
+    margin: 10px;
+    max-width: 1500px;
+}
+
+.AboutMe-header {
+    font-weight: bold;
+    font-size: 62px;
+
+    margin-bottom: 30px;
+}
+
+.AboutMe-image {
+    justify-self: center;
+    border-radius: 25px;
+}
+
+#AboutMe-headshot {
+    height: 350px;
+    width: auto;
+
+    align-self: end;
+}
+
+#AboutMe-wall {
+    height: 400px;
+    width: auto;
+}
+
+.AboutMe-favorites {
+    justify-self: center;
+}
