@@ -15,7 +15,7 @@
 
 .AboutMe-header {
     font-weight: bold;
-    font-size: 62px;
+    font-size: 82px;
 
     margin-bottom: 30px;
 }
@@ -35,6 +35,8 @@
 #AboutMe-wall {
     height: 400px;
     width: auto;
+
+    margin-bottom: 90px
 }
 
 .AboutMe-favorites {

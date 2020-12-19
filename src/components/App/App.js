@@ -6,6 +6,7 @@ import './App.css';
 import { NavBar } from '../NavBar/NavBar';
 import { Intro } from '../Intro/Intro';
 import { AboutMe } from '../AboutMe/AboutMe';
+import { Experience } from '../Experience/Experience';
 
 class App extends React.Component {
   render() {
@@ -14,6 +15,7 @@ class App extends React.Component {
         <NavBar />
         <Intro />
         <AboutMe />
+        <Experience />
       </div>
     );
   }
