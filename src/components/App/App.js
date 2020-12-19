@@ -1,6 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import logo from '../../logo.svg';
 import './App.css';
 
 import { NavBar } from '../NavBar/NavBar';
@@ -8,6 +6,7 @@ import { Intro } from '../Intro/Intro';
 import { AboutMe } from '../AboutMe/AboutMe';
 import { Experience } from '../Experience/Experience';
 import { Skills } from '../Skills/Skills';
+import { Work } from '../Work/Work';
 
 class App extends React.Component {
   render() {
@@ -18,6 +17,7 @@ class App extends React.Component {
         <AboutMe />
         <Experience />
         <Skills />
+        <Work />
       </div>
     );
   }

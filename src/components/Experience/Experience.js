@@ -13,7 +13,7 @@ export class Experience extends React.Component {
             <div className="Experience">
                 <h1 className="Experience-header">Experience.</h1>
                 <div className="Experience-block">
-                    <img src={atricureLogo}></img>
+                    <img src={atricureLogo} alt="AtriCure logo"></img>
                     <div className="Experience-text">
                         <h1 className="Experience-itemheader">AtriCure, Inc.</h1>
                         <h2 className="Experience-itemrole">Operations Engineering Co-op</h2>
@@ -29,7 +29,7 @@ export class Experience extends React.Component {
                     </div>
                 </div>
                 <div className="Experience-block">
-                    <img src={blueprintsLogo}></img>
+                    <img src={blueprintsLogo} alt="Blueprints For Pangaea logo"></img>
                     <div className="Experience-text">
                         <h1 className="Experience-itemheader">Blueprints For Pangaea</h1>
                         <h2 className="Experience-itemrole">COO, Product Manager</h2>
@@ -45,7 +45,7 @@ export class Experience extends React.Component {
                     </div>
                 </div>
                 <div className="Experience-block">
-                    <img src={michiganLogo}></img>
+                    <img src={michiganLogo} alt="Michigan Medicine logo"></img>
                     <div className="Experience-text">
                         <h1 className="Experience-itemheader">Michigan Medicine</h1>
                         <h2 className="Experience-itemrole">Research Assistant</h2>
@@ -57,7 +57,7 @@ export class Experience extends React.Component {
                     </div>
                 </div>
                 <div className="Experience-block">
-                    <img src={childrensLogo}></img>
+                    <img src={childrensLogo} alt="Cincinnati Children's logo"></img>
                     <div className="Experience-text">
                         <h1 className="Experience-itemheader">Cincinnati Children's</h1>
                         <h2 className="Experience-itemrole">Research Assistant</h2>

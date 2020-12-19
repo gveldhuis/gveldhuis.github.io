@@ -1,6 +1,5 @@
 import React from 'react';
 import './AboutMe.css';
-import introImage from '../Intro/introPhoto-2.jpg';
 import headshotImage from './Veldhuis Headshot 1-2.png';
 import favoriteImage from './VeldhuisWallPhoto.png';
 
@@ -16,8 +15,8 @@ export class AboutMe extends React.Component {
                         Outside of any classroom, I enjoy cooking Italian food, eating with friends, and getting my butt kicked in tennis.
                     </p>
                 </div>
-                <img className="AboutMe-image" id="AboutMe-headshot" src={headshotImage}></img>
-                <img className="AboutMe-image" id="AboutMe-wall" src={favoriteImage}></img>   
+                <img className="AboutMe-image" id="AboutMe-headshot" alt="Headshot of Grant" src={headshotImage}></img>
+                <img className="AboutMe-image" id="AboutMe-wall" alt="Grant on the Great Wall of China" src={favoriteImage}></img>   
                 <div className="AboutMe-favorites">
                     <h1 className="AboutMe-header">My Favorite...</h1>
                     <p>

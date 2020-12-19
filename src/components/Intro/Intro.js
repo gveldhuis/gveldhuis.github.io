@@ -12,7 +12,7 @@ export class Intro extends React.Component {
                     <h1 class="Intro-title">NONPROFIT COO</h1>
                 </div>                   
                 <div class="Intro-image">
-                      <img src={introImage}></img>
+                      <img src={introImage} alt="Blueprints members in front of donated medical supplies"></img>
                 </div>
             </div>
         );
