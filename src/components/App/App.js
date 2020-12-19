@@ -7,6 +7,7 @@ import { NavBar } from '../NavBar/NavBar';
 import { Intro } from '../Intro/Intro';
 import { AboutMe } from '../AboutMe/AboutMe';
 import { Experience } from '../Experience/Experience';
+import { Skills } from '../Skills/Skills';
 
 class App extends React.Component {
   render() {
@@ -16,6 +17,7 @@ class App extends React.Component {
         <Intro />
         <AboutMe />
         <Experience />
+        <Skills />
       </div>
     );
   }
