@@ -14,7 +14,7 @@ export class Skills extends React.Component {
                     <ul className='Skills-list'>
                         <li>JavaScript</li>
                         <li>C++</li>
-                        <il>React.js</il>
+                        <li>React.js</li>
                         <li>Node.js</li>
                         <li>HTML</li>
                         <li>CSS</li>
