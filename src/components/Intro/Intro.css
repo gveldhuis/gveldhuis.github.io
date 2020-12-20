@@ -4,27 +4,47 @@
     color: white;
     background: #1340E1;
     width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .Intro-text {
     text-align: center;
-    margin-right: 50px;
+    margin: 20px;
 
-    margin: 30px 10px;
-}
-
-.Intro-image img {
-    height: 655px;
-}
-
-.Intro-begin {
-    font-size: 3.5rem;
+    font-size: 65px;
 }
 
 .Intro-title {
-    font-size: 5rem;
     margin-top: 50px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+
+    font-size: 100px;
 }
+
+@media screen and (max-width: 960px) {
+    .Intro-text {
+        font-size: 45px;
+    }
+    
+    .Intro-title {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Intro-text {
+        font-size: 25px;
+    }
+
+    .Intro-title {
+        font-size: 60px;
+    }
+}
+
+
 
 
