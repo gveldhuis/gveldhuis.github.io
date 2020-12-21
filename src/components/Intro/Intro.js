@@ -1,6 +1,6 @@
 import React from 'react';
 import './Intro.css';
-import '../../index.css'
+import '../../../src/index.css'
 /*import introImage from './introPhoto-2.jpg';*/
 
 export class Intro extends React.Component {

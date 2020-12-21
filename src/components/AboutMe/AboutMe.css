@@ -9,8 +9,8 @@
     column-gap: 30px;
     row-gap: 65px;
 
-    margin: 10px;
-    max-width: 1500px;
+    margin: auto;
+    width: 100%;
 }
 
 .AboutMe-header {
@@ -29,16 +29,63 @@
     height: 350px;
     width: auto;
 
-    align-self: end;
+    align-self: center;
 }
 
 #AboutMe-wall {
     height: 400px;
     width: auto;
 
-    margin-bottom: 90px
+    margin-bottom: 90px;
 }
 
 .AboutMe-favorites {
     justify-self: center;
+}
+
+@media screen and (max-width: 960px) {
+    
+    .AboutMe-header {
+        font-size: 62px;
+    }
+
+    .AboutMe p {
+        font-size: 18px;
+    }
+    
+    #AboutMe-headshot {
+        height: 250px;
+        width: auto;
+    }
+
+    #AboutMe-wall {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .AboutMe {
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr .5fr .5fr .5fr;
+        row-gap: 30px;
+    
+        margin: auto;
+        width: 100%;
+    }
+
+    .AboutMe-header {
+        font-size: 42px;
+    }
+    
+    #AboutMe-headshot {
+        height: 150px;
+        width: auto;
+    }
+
+    #AboutMe-wall {
+        height: 200px;
+        width: auto;
+
+        margin-bottom: 20px;
+    }
 }
