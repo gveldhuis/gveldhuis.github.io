@@ -2,6 +2,7 @@
     background: #1340E1;
     color: white;
     font-family: 'Raleway';
+    font-size: 22px;
 
     width: 100%;
 }
@@ -9,8 +10,6 @@
 .Experience-container {
     display: flex;
     flex-direction: column;
-
-    font-size: 22px;
 
     padding: 10px;
 
