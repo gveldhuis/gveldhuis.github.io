@@ -1,34 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
 
 .NavBar {
     background-color: white;
     color: #1340E1;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    font-family: 'Open Sans';
 
     display: flex;
     flex-direction: row;
-    flex: 1;
     justify-content: space-between;
     align-items: center;
 
-    height: 100px;
-    min-width: 1070px;
-}
+    position: sticky;
+    top: 0;
 
-.NavBar-list {
-    display: flex;
-    justify-content: space-between;
-
-    margin-right: 10px;
-}
-
-.NavBar-list li {
-    font-size: 25px;
-    font-weight: bold;
-
-    list-style: none;
-    
-    margin: 32px;
+    height: 80px;
 }
 
 .NavBar-nameLogo {
@@ -37,3 +25,75 @@
 
     margin-left: 10px;
 }
+
+.NavBar-menuicon {
+    display: none;
+}
+
+.fa-bars {
+    color: #1340E1;
+}
+
+.NavBar-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.NavBar-list a {
+    font-size: 25px;
+    font-weight: bold;
+    color: #1340E1;
+
+    list-style: none;
+    
+    margin: 32px;
+}
+
+@media screen and (max-width: 1060px) {
+    .NavBar
+    
+    .NavBar-menuicon {
+        display: block;
+        position: absolute;
+        right: 20px;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .NavBar-list-active {
+        background: #FFF;
+        left: 0;
+        transition: all 0.5s ease;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90vh;
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        transition: all 0.5s ease;
+    }
+
+    .NavBar-list-active a {
+        color: #1340E1;
+        font-style: 'Open Sans';
+        font-size: 25px;
+
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        padding-bottom: 10px;
+
+        border-bottom: 3px solid #1340E1;
+    }
+
+    .NavBar-list {
+        display: none;
+    }
+
+    .NavBar-nameLogo {
+        font-size: 42px;
+    }
+}
+
