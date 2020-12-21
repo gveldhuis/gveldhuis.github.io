@@ -8,7 +8,7 @@ export class AboutMe extends React.Component {
     render() {
         return (
             <div className="AboutMe">
-                <div className="AboutMe-intro">
+                <div className="AboutMe-intro" id='AboutMe-AboutMeContent'>
                     <h1 className="AboutMe-header">About Me.</h1>
                     <p>
                         Thanks for stopping by! My name’s Grant, and I’m a sophomore at University of Michigan studying Computer Science and Business.<br /><br />
@@ -18,7 +18,7 @@ export class AboutMe extends React.Component {
                 </div>
                 <img className="AboutMe-image" id="AboutMe-headshot" alt="Headshot of Grant" src={headshotImage}></img>
                 <img className="AboutMe-image" id="AboutMe-wall" alt="Grant on the Great Wall of China" src={favoriteImage}></img>   
-                <div className="AboutMe-favorites">
+                <div className="AboutMe-favorites" id="AboutMe-FavoritesContent">
                     <h1 className="AboutMe-header">My Favorite...</h1>
                     <p>
                         <b>Book?</b> We by Yevgeny Zamyatin.<br /><br />

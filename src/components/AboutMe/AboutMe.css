@@ -11,6 +11,8 @@
 
     margin: auto;
     width: 100%;
+
+    max-width: 1620px;
 }
 
 .AboutMe-header {
@@ -30,6 +32,7 @@
     width: auto;
 
     align-self: center;
+    grid-area: 'Headshot';
 }
 
 #AboutMe-wall {
@@ -37,11 +40,20 @@
     width: auto;
 
     margin-bottom: 90px;
+    grid-area: 'Wall';
 }
 
 .AboutMe-favorites {
     justify-self: center;
+    grid-area: 'FavoritesSection';
 }
+
+.AboutMe-intro {
+    grid-area: 'IntroSection';
+    margin: 20px;
+}
+
+
 
 @media screen and (max-width: 960px) {
     
@@ -66,8 +78,14 @@
 @media screen and (max-width: 768px) {
     .AboutMe {
         grid-template-columns: 1fr;
-        grid-template-rows: .5fr .5fr .5fr .5fr;
+        grid-template-rows: repeat(4, 0.5fr);
         row-gap: 30px;
+
+        grid-template-areas:
+            "IntroSection"
+            "Headshot"
+            "FavoritesSection"
+            "Wall";
     
         margin: auto;
         width: 100%;
@@ -89,3 +107,8 @@
         margin-bottom: 20px;
     }
 }
+
+
+
+
+
