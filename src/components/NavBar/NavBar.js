@@ -23,7 +23,7 @@ export function NavBar() {
                 <i className='fas fa-bars'></i>
             </div>
             <div className={click ? 'NavBar-list-active' : 'NavBar-list'}>
-                <a href='' onClick={closeMobileMenu}>About Me</a>
+                <a href='#AboutMe' onClick={closeMobileMenu}>About Me</a>
                 <a href='' onClick={closeMobileMenu}>Experience</a>
                 <a href='' onClick={closeMobileMenu}>My Work</a>
                 <a href='' onClick={closeMobileMenu}>Contact</a>
