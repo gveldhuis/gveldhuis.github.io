@@ -1,0 +1,79 @@
+.Contact {
+    background-color: #1340E1;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 22px;
+
+    width: 100%;
+}
+
+.Contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: auto;
+    max-width: 1620px;
+}
+
+.Contact-header {
+    font-size: 82px;
+    font-weight: bold;
+    text-align: center;
+    max-width: 1055px;
+    padding: 10px;
+    margin: auto;
+}
+
+.Contact-icons {
+    display: flex;
+    padding: 50px;
+
+    margin: auto;
+}
+
+#Contact-GitHub, #Contact-email, #Contact-linkedin {
+    display: block;
+
+    fill: white;
+    width: 85px;
+    height: auto;
+    cursor: pointer;
+
+    margin: 60px;
+}
+
+.Contact-form {
+    background-color: white;
+    height: 970px;
+    width: 960px;
+    margin: 20px auto;
+    border-radius: 35px;
+}
+
+@media screen and (max-width: 960px) {
+    .Contact-header {
+        font-size: 62px; 
+    }
+
+    #Contact-GitHub, #Contact-email, #Contact-linkedin {
+        width: 65px;
+        height: auto;
+    
+        margin: 40px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .Contact-header {
+        font-size: 42px; 
+    }
+
+    #Contact-GitHub, #Contact-email, #Contact-linkedin {
+        width: 45px;
+        height: auto;
+    
+        margin: 20px;
+    }
+}
