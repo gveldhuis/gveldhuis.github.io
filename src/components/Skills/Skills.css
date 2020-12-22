@@ -16,22 +16,17 @@
 }
 
 .Skills-block {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1em;
 
-    margin: 10px;
-}
 
-.Skills-set {
     margin: 20px;
-
-    min-width: 293px;
 }
 
 .Skills-header {
     font-size: 82px;
-    margin-bottom: 30px;
+    margin: 20px;
     font-weight: bold;
 }
 
@@ -45,6 +40,7 @@
     padding-bottom: 9px;
 
     font-size: 32px;
+
 }
 
 .Skills-list {

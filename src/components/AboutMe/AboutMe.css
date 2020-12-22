@@ -10,8 +10,6 @@
     row-gap: 65px;
     width: 100%;
     margin: auto;
-    margin-bottom: 40px;
-
     max-width: 1620px;
 }
 
@@ -46,6 +44,8 @@
 .AboutMe-favorites {
     justify-self: center;
     grid-area: 'FavoritesSection';
+
+    margin-bottom: 40px;
 }
 
 .AboutMe-intro {

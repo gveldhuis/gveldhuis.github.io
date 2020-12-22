@@ -1,5 +1,6 @@
 import React from 'react';
 import './Skills.css';
+import '../../../src/index.css'
 
 export class Skills extends React.Component {
     render() {
@@ -8,8 +9,8 @@ export class Skills extends React.Component {
                 <div className='Skills-container'>
                     <h1 className='Skills-header'>Skills.</h1>
                     <div className='Skills-block'>
-                        <div className='Skills-set'>
-                            <h2 className='Skills-type'>Languages &amp; Frameworks</h2>
+                        <div className='Skills-set' id='languages'>
+                            <h2 className='Skills-type'>Languages &amp; <br/> Frameworks</h2>
                             <ul className='Skills-list'>
                                 <li>JavaScript</li>
                                 <li>C++</li>
@@ -20,8 +21,8 @@ export class Skills extends React.Component {
                                 <li>mySQL</li>
                             </ul>
                         </div>
-                        <div className="Skills-set">
-                            <h2 className='Skills-type'>Software Systems</h2>
+                        <div className="Skills-set" id='software'>
+                            <h2 className='Skills-type'>Software <br/>Systems</h2>
                             <ul className='Skills-list'>
                                 <li>Figma</li>
                                 <li>Sketch</li>
@@ -30,16 +31,16 @@ export class Skills extends React.Component {
                                 <li>Excel</li>
                             </ul>
                         </div>
-                        <div className="Skills-set">
-                            <h2 className='Skills-type'>Enterprise Applications</h2>
+                        <div className="Skills-set" id='enterprise'>
+                            <h2 className='Skills-type'>Enterprise <br/>Applications</h2>
                             <ul className='Skills-list'>
                                 <li>Microsoft Dynamics</li>
                                 <li>Azure</li>
                                 <li>AWS</li>
                             </ul>
                         </div>
-                        <div className="Skills-set">
-                            <h2 className='Skills-type'>Soft Skills</h2>                      
+                        <div className="Skills-set" id='softskills'>
+                            <h2 className='Skills-type'>Soft <br/>Skills</h2>                      
                             <ul className='Skills-list'>
                                 <li>Empathetic Leadership</li>
                                 <li>Product Management</li>
