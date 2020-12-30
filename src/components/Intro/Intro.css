@@ -1,3 +1,10 @@
+#Intro {
+    content: " ";
+    visibility: none;
+    display: block;
+    margin-top: -80px;
+    padding-top: 80px;
+}
 
 .Intro {
     font-family: 'Raleway';

@@ -1,3 +1,11 @@
+#Work {
+    content: " ";
+    visibility: none;
+    display: block;
+    margin-top: -80px;
+    padding-top: 80px;   
+}
+
 .Work {
     background-color: white;
     color: #1340E1;

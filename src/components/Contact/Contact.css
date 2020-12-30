@@ -1,3 +1,11 @@
+#Contact {
+    content: " ";
+    visibility: none;
+    display: block;
+    margin-top: -80px;
+    padding-top: 80px;   
+}
+
 .Contact {
     background-color: #1340E1;
     color: white;
