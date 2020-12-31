@@ -3,7 +3,7 @@ import './Intro.css';
 import '../../../src/index.css'
 /*import introImage from './introPhoto-2.jpg';*/
 
-let rolesArray = ["NONPROFIT COO", "SOFTWARE DEVELOPER", "TENNIS PLAYER", "CS STUDENT"];
+let rolesArray = ["NONPROFIT COO", "SOFTWARE DEVELOPER", "TENNIS PLAYER", "COMPSCI STUDENT"];
 
 
 export class Intro extends React.Component {
