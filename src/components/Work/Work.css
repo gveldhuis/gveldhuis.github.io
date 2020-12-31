@@ -12,32 +12,31 @@
     font-family: 'Raleway';
     font-size: 22px;
 
-    padding: 10px;
+    margin: 20px auto;
+    padding: 20px;
     width: 100%;
 }
 
 .Work-container {
-    margin: 10px;
-    max-width: 1620px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;
     margin: auto;
 }
 
 .Work-blocks {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 750px));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 600px));
     column-gap: 30px;
-    row-gap: 50px;
+    row-gap: 30px;
 
-    margin: 20px;
-
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .Work-header {
     font-size: 82px;
     font-weight: bold;
-
-    margin: 20px;
+    margin-bottom: 30px;
 }
 
 .Work-block {

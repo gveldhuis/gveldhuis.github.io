@@ -59,7 +59,7 @@
 }
 
 .Experience-itemheader {
-    font-size: 62px;
+    font-size: 52px;
     font-weight: bold;
 }
 
@@ -90,17 +90,14 @@
         font-size: 18px;
     }
 
-    .AboutMe p {
-        font-size: 18px;
-    }
-    
-    #AboutMe-headshot {
-        height: 250px;
-        width: auto;
+    .Experience-img {
+        margin-right: 60px;
     }
 
-    #AboutMe-wall {
-        height: 300px;
+    .Experience-img img {
+        max-width: 200px;
+        padding: 15px;
+        height: auto;
     }
 }
 
@@ -119,10 +116,15 @@
     }
 
     .Experience-img {
-        width: 80%;
+        width: 90%;
         margin: auto;
 
         margin-bottom: 40px;
+    }
+
+    .Experience-img img {
+        max-width: 275px;
+        padding: 15px;
     }
 }
 
