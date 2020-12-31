@@ -16,6 +16,9 @@
     justify-content: center;
     align-items: center;
 
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
 }
 
 .Intro-text {

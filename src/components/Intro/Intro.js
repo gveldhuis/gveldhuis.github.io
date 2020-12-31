@@ -9,11 +9,11 @@ export class Intro extends React.Component {
             <>
                 <div id="Intro"></div>
                 <div className="Intro">
-                <div className="Intro-text">
-                     <h1>Hello!</h1>
-                     <h1>My name's Grant, and I am a...</h1>
-                     <h1 className="Intro-title">NONPROFIT COO</h1>
-                </div>                          
+                    <div className="Intro-text">
+                        <h1>Hello!</h1>
+                        <h1>My name's Grant, and I am a...</h1>
+                        <h1 className="Intro-title">NONPROFIT COO</h1>
+                    </div>                          
                 </div>
             </>
         );
