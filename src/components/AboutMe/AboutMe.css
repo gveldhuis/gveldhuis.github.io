@@ -17,8 +17,9 @@
     column-gap: 30px;
     row-gap: 65px;
     width: 100%;
-    margin: auto;
-    max-width: 1620px;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1400px;
 }
 
 .AboutMe-header {
@@ -28,40 +29,25 @@
     margin-bottom: 30px;
 }
 
-.AboutMe-image {
-    justify-self: center;
-    border-radius: 25px;
-}
-
-#AboutMe-headshot {
+#AboutMe-headshot, #AboutMe-wall {
     height: 350px;
     width: auto;
 
-    align-self: center;
-    grid-area: 'Headshot';
-}
+    border-radius: 25px;
 
-#AboutMe-wall {
-    height: 400px;
-    width: auto;
-
-    margin-bottom: 90px;
-    grid-area: 'Wall';
-}
-
-.AboutMe-favorites {
     justify-self: center;
-    grid-area: 'FavoritesSection';
-
-    margin-bottom: 40px;
+    align-self: center;
 }
 
-.AboutMe-intro {
-    grid-area: 'IntroSection';
+.AboutMe-content {
     margin: 20px;
 }
 
-
+@media screen and (max-width: 1180px) {
+    #AboutMe-headshot, #AboutMe-wall {
+        height: 250px;
+    }
+}
 
 @media screen and (max-width: 960px) {
     
@@ -69,17 +55,8 @@
         font-size: 62px;
     }
 
-    .AboutMe p {
+    .AboutMe-content p {
         font-size: 18px;
-    }
-    
-    #AboutMe-headshot {
-        height: 250px;
-        width: auto;
-    }
-
-    #AboutMe-wall {
-        height: 300px;
     }
 }
 
@@ -97,16 +74,9 @@
         font-size: 42px;
     }
     
-    #AboutMe-headshot {
-        height: 150px;
+    #AboutMe-headshot, #AboutMe-wall {
+        height: 175px;
         width: auto;
-    }
-
-    #AboutMe-wall {
-        height: 200px;
-        width: auto;
-
-        margin-bottom: 20px;
     }
 }
 
