@@ -4,29 +4,28 @@
     font-family: 'Raleway';
     font-size: 22px;
 
-    padding: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
     width: 100%;
 }
 
 .Skills-container {
     display: flex;
     flex-direction: column;
+    max-width: 1400px;
     margin: auto;
-    max-width: 1620px;
 }
 
 .Skills-block {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 1em;
-
-
-    margin: 20px;
 }
 
 .Skills-header {
     font-size: 82px;
-    margin: 20px;
+    margin-bottom: 30px;
     font-weight: bold;
 }
 
@@ -57,7 +56,7 @@
     }
 
     .Skills-type {
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .Skills-list {

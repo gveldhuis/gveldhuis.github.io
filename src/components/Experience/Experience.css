@@ -19,24 +19,21 @@
     display: flex;
     flex-direction: column;
 
-    padding: 10px;
-
     margin: auto;
-    max-width: 1620px;
-
+    margin-top: 20px;
+    padding: 20px;
+    max-width: 1400px;
 }
 
 .Experience-header {
-    font-size: 82px;
-    margin-bottom: 90px;
     font-weight: bold;
+    font-size: 82px;
+    margin-bottom: 30px;
 }
 
 .Experience-block {
     display: flex;
-    margin-bottom: 90px;
-    margin: 20px;
-    margin-bottom: 55px;
+    margin: 40px 0;
 }
 
 .Experience-img {
@@ -57,6 +54,7 @@
 
 .Experience-img img {
     max-width: 250px;
+    padding: 15px;
     height: auto;
 }
 
@@ -109,7 +107,11 @@
 @media screen and (max-width: 768px) {
 
     .Experience-header {
-        font-size: 62px; 
+        font-size: 42px; 
+    }
+
+    .Experience-itemheader {
+        font-size: 32px;
     }
 
     .Experience-block {
