@@ -31,7 +31,9 @@ export function NavBar() {
     /*//////////////////////////////////////////////////////////////////////*/
 
     /* Handler functions */
-    const handleMobileClick = () => setClick(!click);
+    const handleMobileClick = () => {
+        setClick(!click);
+    };
 
     function handleLinkClick(event) {
         event.preventDefault();
@@ -57,9 +59,9 @@ export function NavBar() {
         <nav className={top ? 'NavBar' : 'NavBar offset'}>
             <h1 className='NavBar-nameLogo'>GRANT VELDHUIS</h1>
             <div className='NavBar-menuicon' onClick={handleMobileClick}>
-                <i className={top ? 'fas fa-bars' : 'fas fa-bars offset'}></i>
+                <i className="fas fa-bars"></i>
             </div>
-            <div className={click ? 'NavBar-list-active' : 'NavBar-list'}>
+            <div className={click ? 'NavBar-list active' : 'NavBar-list'}>
                 <a href='#AboutMe' onClick={handleLinkClick}>About Me</a>
                 <a href='#Experience' onClick={handleLinkClick}>Experience</a>
                 <a href='#Work' onClick={handleLinkClick}>My Work</a>
