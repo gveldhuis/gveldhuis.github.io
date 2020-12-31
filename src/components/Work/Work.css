@@ -26,11 +26,11 @@
 
 .Work-blocks {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 600px));
+    grid-template-columns: repeat(auto-fill, minmax(335px, 600px));
     column-gap: 30px;
     row-gap: 30px;
 
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .Work-header {
@@ -75,10 +75,25 @@
         font-size: 18px;
     }
 
+    .Work-blocks img {
+        width: 300px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
+    .Work-blocks {
+        row-gap: 10px;
+    }
+
     .Work-header {
         font-size: 42px;
+    }
+
+    .Work-blocks img {
+        width: 250px;
+
+        margin-top: 0;
+        margin-bottom: 50px;
     }
 }
