@@ -9,7 +9,7 @@ import { Experience } from '../Experience/Experience';
 import { AboutMe } from '../AboutMe/AboutMe';
 import { NavBar } from '../NavBar/NavBar';
 import { Intro } from '../Intro/Intro';
-import { Contact } from '../Contact/Contact';
+import Contact from '../Contact/Contact';
 
 /*
 
