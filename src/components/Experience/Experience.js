@@ -1,22 +1,57 @@
 import React from 'react';
 import './Experience.css';
 import '../../../src/index.css'
+import { ExperienceItem } from '../ExperienceItem/ExperienceItem';
 
 import atricureLogo from './atricureLogo.png';
 import blueprintsLogo from './blueprintsLogo.png';
 import childrensLogo from './cincinnatichildrensLogo.png';
 import michiganLogo from './michiganmedicineLogo.png';
 
+class ExperienceBlock {
+    constructor(logo, company, role, explanation, highlights) {
+        this.logo = logo;
+        this.company = company;
+        this.role = role;
+        this.explanation = explanation;
+        this.highlights = highlights;
+    }
+} 
+
+var atricure = new ExperienceBlock(
+    atricureLogo,
+    "AtriCure, Inc.",
+    "Operations Engineering Co-op",
+    "My term at AtriCure was nothing short of amazing. I implemented Lean on a manufacturing floor, developed an internal website to optimize factory staffing, and ultimately helped make a difference in the lives of patients with AFib.  Highlights include...",
+    ["Implementing Lean which created $70,000 in annual savings", 
+     "Developing Power-BI dashboard with 85% utilization rate", 
+     "Creating React.js web-app to optimize line staffing"],
+);
+
+var blueprints = new ExperienceBlock(
+    blueprintsLogo,
+    "Blueprints For Pangaea",
+    "COO, Product Manager",
+    "Blueprints is a student-run, 501-(c)(3) nonprofit that ships excess medical supplies overseas. Serving as COO has been the honor of a lifetime, as Blueprints combines my passion for healthcare, love for technology, and drive to create positive efficiency in the world. My favorite moments include...",
+    ["Acting as Product Manager for internal web-app, winning $20,000 in University funding and creating 150% efficiency increase", 
+     "Leading Operational strategy for 7 national University chapters shipping $1M of medical supplies yearly",
+     "Coordinating donation of $12,000 worth of PPE to community organizations amid COVID-19",
+    ],
+)
 
 export class Experience extends React.Component {
     render() {
+        
+
         return (
             <>
                 <div id="Experience"></div>
                 <div className="Experience">
                     <div className="Experience-container">
                         <h1 className="Experience-header">Experience.</h1>
-                        <div className="Experience-block">
+                            <ExperienceItem experienceblock={atricure}/>
+                            <ExperienceItem experienceblock={blueprints}/>
+                        {/*<div className="Experience-block">
                             <div className="Experience-img"> 
                                 <img src={atricureLogo} alt="AtriCure logo"></img>
                             </div>
@@ -79,7 +114,7 @@ export class Experience extends React.Component {
                                     <b>Co-authoring a poster presentation on novel diagnosis for complex heart condition, which was presented at 2019 AHA National Scientific Conference to +12,000 healthcare professionals.</b>
                                 </p>
                             </div>
-                        </div>
+                        </div>*/}
                     </div>
                 </div>                
             </>
