@@ -4,6 +4,8 @@ import '../../../src/index.css'
 import atricureWork from './AtricureWork.png'
 import blueprintsWork from './BlueprintsWork.png'
 
+
+
 export class Work extends React.Component {
     render() {
         return (
@@ -13,7 +15,7 @@ export class Work extends React.Component {
                         <div className="Work-container">
                             <h1 className="Work-header">My Work.</h1>
                             <div className="Work-blocks">
-                                <div className="Work-block">
+                                {/*<div className="Work-block">
                                     <h2 className="Work-subheader"><b>Inventory App:</b> Blueprints For Pangaea</h2>
                                     <p className="Work-content">
                                         <b>Brief:</b> I acted as product manager for the development of this mobile web-app and desktop admin console combination, meant to scan product labels to help better inventory medical supplies.<br /><br /> 
@@ -34,7 +36,7 @@ export class Work extends React.Component {
                                         <b>Impact:</b> 85% utilization among supervisors after 2 weeks.
                                     </p>
                                 </div>
-                                <img src={atricureWork}></img>
+                                <img src={atricureWork}></img>*/}
                             </div>                  
                         </div>
                     </div>
