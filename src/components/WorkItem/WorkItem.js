@@ -12,17 +12,18 @@ export class WorkItem extends React.Component {
 
         return (
             <div className="Work-block">
-                <h2 className="Work-subheader"><b>Inventory App:</b> Blueprints For Pangaea</h2>
-                <p className="Work-content">
-                    <b>Brief:</b> I acted as product manager for the development of this mobile web-app and desktop admin console combination, meant to scan product labels to help better inventory medical supplies.<br /><br /> 
+                <div className="Work-text">
+                    <h2 className="Work-subheader"><b>{this.props.workitem.projectTitle}</b> {this.props.workitem.company}</h2>
+                    <p className="Work-content">
+                        <b>Brief:</b> {this.props.workitem.brief}<br /><br /> 
 
-                    <b>Technology:</b> Mobile web-app uses Tesseract OCR to recognize text in image of scanned label. Desktop admin console uses Django backend connected to sqLite database. Both parts of app use React.js frontend and Microsoft Azure’s App Service.<br /><br /> 
+                        <b>Technology:</b> {this.props.workitem.tech}<br /><br /> 
 
-                    <b>Impact:</b> $20,000 in University funding, 150% increase in inventorying efficiency.
-                </p>
-                <img src={blueprintsWork}></img>
+                        <b>Impact:</b> {this.props.workitem.impact}
+                    </p>
+                </div>
+                <img src={this.props.workitem.image}></img>
             </div>
-            
         );
     }
 }

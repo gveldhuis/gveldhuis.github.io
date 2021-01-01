@@ -1,0 +1,48 @@
+.Work-block {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.Work-subheader {
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+
+.Work-block img {
+    width: 350px;
+    height: auto;
+
+    align-self: center;
+    justify-self: center;
+
+    margin-bottom: 40px;
+    margin: 20px;
+}
+
+@media screen and (max-width: 960px) {
+    .Work-block {
+        flex-direction: column;
+    }
+
+    .Work-subheader {
+        font-size: 25px;
+    }
+
+    .Work-block p {
+        font-size: 18px;
+    }
+
+    .Work-block img {
+        width: 300px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .Work-block img {
+        width: 250px;
+
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+}
