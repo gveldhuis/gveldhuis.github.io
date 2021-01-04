@@ -3,6 +3,7 @@
     margin: 40px 0;
 }
 
+
 .Experience-img {
     display: flex;
     justify-content: center;
@@ -16,6 +17,10 @@
 
     background: white;
     border-radius: 35px;
+}
+
+.Experience-text {
+    color: #1340E1;
 }
 
 .Experience-img img {

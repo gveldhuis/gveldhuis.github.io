@@ -10,30 +10,13 @@ export class ExperienceItem extends React.Component {
     }
 
     render() {
-        let highlights = this.props.experienceblock.highlights;
 
         return (
             <div className="ExperienceItem">
                 <div className="Experiences"> 
-                    <MicroModal trigger={(open) => 
-                        <ExperienceCard experienceblock={this.props.experienceblock} open={open}/>               
-                    }
-                    >
-                        {(close) => 
-                        <div>
-                            <div className="Experience-text">
-                                <h1 className="Experience-itemheader">{this.props.experienceblock.company}</h1>
-                                <h2 className="Experience-itemrole">{this.props.experienceblock.role}</h2>
-                                <p className="Experience-description">
-                                    {this.props.experienceblock.explanation}<br /><br />
-                                    <b>{highlights.map((highlight) => <><p>{highlight}</p><br /><br /></>)}</b>
-                                </p>
-                            </div>
-                            <button onClick={close}>Close</button>
-                        </div>
-                        }
+                    <MicroModal trigger={(open) => <ExperienceCard experienceblock={this.props.experienceblock} open={open}/>} overrides={micromodalStyles}>
+                        {(close) => <ExperienceModal className='ExperienceModal' experienceblock={this.props.experienceblock} close={close}/>}
                     </MicroModal>
-                    
                 </div>
                 
             </div>
@@ -53,6 +36,37 @@ class ExperienceCard extends React.Component {
         );
     }
 }
+
+class ExperienceModal extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        let highlights = this.props.experienceblock.highlights;
+
+        return (
+            <div className="Experience-text">
+                <h1 className="Experience-itemheader">{this.props.experienceblock.company}</h1>
+                <h2 className="Experience-itemrole">{this.props.experienceblock.role}</h2>
+                <p className="Experience-description">
+                    {this.props.experienceblock.explanation}<br /><br />
+                    <b>{highlights.map((highlight) => <><p>{highlight}</p><br /><br /></>)}</b>
+                </p>
+                <button onClick={this.props.close}>Close</button>
+            </div>
+        );
+    }
+}
+
+let micromodalStyles = {
+    Dialog: {
+        style: {
+            maxWidth: '1500px',
+            minWidth: '275px',
+        },
+    },
+};
 
 
 
