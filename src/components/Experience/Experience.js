@@ -2,6 +2,7 @@ import React from 'react';
 import './Experience.css';
 import '../../../src/index.css'
 import { ExperienceItem } from '../ExperienceItem/ExperienceItem';
+import MicroModal from 'react-micro-modal';
 
 import atricureLogo from './atricureLogo.png';
 import blueprintsLogo from './blueprintsLogo.png';
