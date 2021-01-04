@@ -31,3 +31,8 @@
     margin-bottom: 30px;
 }
 
+.Experience-Items {
+    display: flex;
+    flex-wrap: wrap;
+}
+

@@ -64,10 +64,12 @@ export class Experience extends React.Component {
                 <div className="Experience">
                     <div className="Experience-container">
                         <h1 className="Experience-header">Experience.</h1>
-                            <ExperienceItem experienceblock={atricure} />
-                            <ExperienceItem experienceblock={blueprints} />
-                            <ExperienceItem experienceblock={michiganmedicine} />
-                            <ExperienceItem experienceblock={childrens} />
+                            <div className="Experience-Items">
+                                <ExperienceItem experienceblock={atricure} />
+                                <ExperienceItem experienceblock={blueprints} />
+                                <ExperienceItem experienceblock={michiganmedicine} />
+                                <ExperienceItem experienceblock={childrens} />
+                            </div>
                     </div>
                 </div>                
             </>

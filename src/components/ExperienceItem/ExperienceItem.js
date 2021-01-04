@@ -14,8 +14,11 @@ export class ExperienceItem extends React.Component {
 
         return (
             <div className="ExperienceItem">
-                <div className="Experience-img"> 
-                    <MicroModal trigger={(open) => <img onClick={open} src={this.props.experienceblock.logo} alt="AtriCure logo"></img>}>
+                <div className="Experiences"> 
+                    <MicroModal trigger={(open) => 
+                        <ExperienceCard experienceblock={this.props.experienceblock} open={open}/>               
+                    }
+                    >
                         {(close) => 
                         <div>
                             <div className="Experience-text">
@@ -26,7 +29,7 @@ export class ExperienceItem extends React.Component {
                                     <b>{highlights.map((highlight) => <><p>{highlight}</p><br /><br /></>)}</b>
                                 </p>
                             </div>
-                            <button onClick={close}>{this.props.experienceblock.company}</button>
+                            <button onClick={close}>Close</button>
                         </div>
                         }
                     </MicroModal>
@@ -34,6 +37,19 @@ export class ExperienceItem extends React.Component {
                 </div>
                 
             </div>
+        );
+    }
+}
+
+class ExperienceCard extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return (
+            <div className="Experience-img">
+                <img onClick={this.props.open} src={this.props.experienceblock.logo} alt="AtriCure logo"></img>
+            </div> 
         );
     }
 }
