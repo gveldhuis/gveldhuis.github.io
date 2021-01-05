@@ -6,32 +6,38 @@ import blueprintsWork from './BlueprintsWork.png'
 import { WorkItem } from '../WorkItem/WorkItem';
 
 class WorkBlock {
-    constructor(projectTitle, company, brief, tech, impact, image) {
+    constructor(projectTitle, company, brief, tech, impact, image, workTag, langTags) {
         this.projectTitle = projectTitle;
         this.company = company;
         this.brief = brief;
         this.tech = tech;
         this.impact = impact;
         this.image = image;
+        this.workTag = workTag;
+        this.langTags = langTags;
     }
 }
 
 var inventoryapp = new WorkBlock(
-    "Inventory App",
+    "\"Inventory App\"",
     "Blueprints For Pangaea",
     "I acted as product manager for the development of this mobile web-app and desktop admin console combination, meant to scan product labels to help better inventory medical supplies.",
     "Mobile web-app uses Tesseract OCR to recognize text in image of scanned label. Desktop admin console uses Django backend connected to sqLite database. Both parts of app use React.js frontend and Microsoft Azure’s App Service.",
     "$20,000 in University funding, 150% increase in inventorying efficiency.",
     blueprintsWork,
+    {name: "Product Management", color: "#FAFF07"},
+    [{name: "React", color: "#63E3FF"}, {name: "Django", color: "#FBC55D"}],
 );
 
 var atricureapp = new WorkBlock(
-    "Staffing App",
+    "\"Staffing App\"",
     "AtriCure",
     "I developed an interactive, internal web-app to help manufacturing supervisors calculate optimal staffing for production lines, based on current manpower, historical output, and consumer demand.",
     "Utilized React.js fronted with a Node.js backend, connected to mySQL database.",
     "85% utilization among supervisors after 2 weeks.",
     atricureWork,
+    {name: "Full-Stack Development", color: "#FFC163"},
+    [{name: "React", color: "#63E3FF"}, {name: "Node.js", color: "#32FB11"}],
 );
 
 export class Work extends React.Component {
