@@ -27,6 +27,7 @@
 .Work-blocks {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .Work-header {

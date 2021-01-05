@@ -25,10 +25,6 @@
     cursor: pointer;
 }
 
-.Work-subheader {
-    font-size: 42px;
-    margin-bottom: 30px;
-}
 
 .Work-card img {
     width: 300px;
@@ -79,6 +75,63 @@
     margin: 5px;
 }
 
+/* WorkModal Styles */
+.WorkModal {
+    display: flex;
+    flex-direction: column;
+}
+
+.WorkModalContent {
+    display: flex;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.Work-subheader {
+    font-size: 42px;
+    margin-bottom: 5px;
+}
+
+.Work-text h3 {
+    font-size: 25px;
+    font-style: italic;
+
+    margin-bottom: 30px;
+}
+
+
+.Work-text {
+    color: #1340E1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.WorkModal img {
+    height: 200px;
+    width: auto;
+
+    margin: 20px;
+}
+
+.Work-closebtn {
+    width: 200px;
+    align-self: center;
+    border: none;
+
+    padding: 10px;
+    border-radius: 30px;
+
+    background: #1340E1;
+    color: white;
+
+    cursor: pointer;
+}
+
+.Work-closebtn:focus {
+    outline: none;
+}
 
 @media screen and (max-width: 960px) {
     .Work-block {
@@ -93,128 +146,28 @@
         font-size: 18px;
     }
 
-    .Work-block img {
-        width: 300px;
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-    .Work-block img {
-        width: 250px;
-
-        margin-top: 0;
-        margin-bottom: 50px;
-    }
-}
-
-
-
-
-
-
-/* ExperienceItem Styles */
-
-.ExperienceItem {
-    display: flex;
-    margin: 20px 0;
-}
-
-
-/* ExperienceCard Styles */
-
-
-
-
-/* ExperienceModal Styles */
-
-.Experience-text {
-    color: #1340E1;
-    display: flex;
-    flex-direction: column;
-}
-
-.Experience-itemheader {
-    font-size: 52px;
-    font-weight: bold;
-}
-
-.Experience-itemrole {
-    font-size: 32px;
-    font-style: italic;
-
-    margin-bottom: 30px;
-    padding-bottom: 10px;
-
-    border-bottom: 3px solid white;
-}
-
-.Experience-description {
-    font-size: 18px;
-    line-height: 22px;
-}
-
-.Experience-closebtn {
-    width: 200px;
-    align-self: center;
-    border: none;
-
-    padding: 10px;
-    border-radius: 30px;
-
-    background: #1340E1;
-    color: white;
-
-    cursor: pointer;
-}
-
-.Experience-closebtn:focus {
-    outline: none;
-}
-
-
-
-@media screen and (max-width: 960px) {
-    .Experience-header {
-        font-size: 62px; 
-    }
-
-    .Experience-itemheader {
-        font-size: 42px;
-    }
-
-    .Experience-itemrole {
-        font-size: 22px;
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-
-    .Experience-header {
-        font-size: 42px; 
-    }
-
-    .Experience-itemheader {
-        font-size: 32px;
-    }
-
-    .ExperienceItem {
-        flex-direction: column;
-    }
-
-    .Experience-img img {
-        max-width: 275px;
-        padding: 25px;
-    }
-
-    .Experience-card {
+    .Work-card {
         margin: 20px;
     }
 
-    .Experience-text p {
-        font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .Work-block img {
+        max-width: 275px;
     }
 
-    
+    .WorkModalContent {
+        flex-direction: column;
+    }
+
+    .WorkModalContent img {
+        width: 200px;
+        height: 150px;
+        justify-self: center;
+        align-self: center;
+    }
 }
+
+
+

@@ -63,19 +63,23 @@ class WorkModal extends React.Component {
     render() {
 
         return (
-            <>
-                <div className="Work-text">
-                    <h2 className="Work-subheader"><b>{this.props.workitem.projectTitle}</b> {this.props.workitem.company}</h2>
-                    <p className="Work-content">
-                        <b>Brief:</b> {this.props.workitem.brief}<br /><br /> 
+            <div className="WorkModal">
+                <div className="WorkModalContent">
+                    <div className="Work-text">
+                        <h2 className="Work-subheader"><b>{this.props.workitem.projectTitle}</b></h2>
+                        <h3>{this.props.workitem.company}</h3>
+                        <p className="Work-content">
+                            <b>Brief:</b> {this.props.workitem.brief}<br /><br /> 
 
-                        <b>Technology:</b> {this.props.workitem.tech}<br /><br /> 
+                            <b>Technology:</b> {this.props.workitem.tech}<br /><br /> 
 
-                        <b>Impact:</b> {this.props.workitem.impact}
-                    </p>
+                            <b>Impact:</b> {this.props.workitem.impact}
+                        </p>
+                    </div>
+                    <img src={this.props.workitem.image}></img>
                 </div>
-                <img src={this.props.workitem.image}></img>
-            </>
+                <button className="Work-closebtn" onClick={this.props.close}>Close</button>
+            </div>
         );
     }
 }
