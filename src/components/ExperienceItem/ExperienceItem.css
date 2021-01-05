@@ -21,6 +21,8 @@
 
 .Experience-text {
     color: #1340E1;
+    display: flex;
+    flex-direction: column;
 }
 
 .Experience-img img {
@@ -42,6 +44,18 @@
     padding-bottom: 10px;
 
     border-bottom: 3px solid white;
+}
+
+.Experience-closebtn {
+    width: 200px;
+    align-self: center;
+    border: none;
+
+    padding: 10px;
+    border-radius: 30px;
+
+    background: #1340E1;
+    color: white;
 }
 
 @media screen and (max-width: 960px) {
@@ -95,6 +109,6 @@
 
     .Experience-img img {
         max-width: 275px;
-        padding: 15px;
+        padding: 25px;
     }
 }

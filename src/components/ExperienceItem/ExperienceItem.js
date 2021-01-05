@@ -51,9 +51,9 @@ class ExperienceModal extends React.Component {
                 <h2 className="Experience-itemrole">{this.props.experienceblock.role}</h2>
                 <p className="Experience-description">
                     {this.props.experienceblock.explanation}<br /><br />
-                    <b>{highlights.map((highlight) => <><p>{highlight}</p><br /><br /></>)}</b>
+                    <b>{highlights.map((highlight) => <><li>{highlight}</li><br /><br /></>)}</b>
                 </p>
-                <button onClick={this.props.close}>Close</button>
+                <button className="Experience-closebtn" onClick={this.props.close}>Close</button>
             </div>
         );
     }
@@ -64,6 +64,8 @@ let micromodalStyles = {
         style: {
             maxWidth: '1500px',
             minWidth: '275px',
+            borderRadius: '35px',
+            margin: '20px',
         },
     },
 };
