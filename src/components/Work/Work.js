@@ -3,6 +3,7 @@ import './Work.css';
 import '../../../src/index.css'
 import atricureWork from './AtricureWork.png'
 import blueprintsWork from './BlueprintsWork.png'
+import medvisionWork from './medvisionscreencap.png'
 import { WorkItem } from '../WorkItem/WorkItem';
 
 class WorkBlock {
@@ -18,6 +19,18 @@ class WorkBlock {
         this.link = link;
     }
 }
+
+var medvisionweb = new WorkBlock(
+    "Client-Facing Website",
+    "MedVision",
+    "I developed a comprehensive website with an account management system to act as the face of the organizaiton.",
+    "Website has a React frontend and Node.js backend with account management system, deployed through AWS",
+    "Visually appealing portfolio of organization's work",
+    medvisionWork,
+    {name: "Front-End Dev", color: "#FAFF07"},
+    [{name: "React", color: "#63E3FF"}, {name: "Node.js", color: "#32FB11"}],
+    "",
+);
 
 var inventoryapp = new WorkBlock(
     "\"Inventory App\"",
@@ -52,6 +65,7 @@ export class Work extends React.Component {
                         <div className="Work-container">
                             <h1 className="Work-header">My Work.</h1>
                             <div className="Work-blocks">
+                                <WorkItem workitem={medvisionweb} />
                                 <WorkItem workitem={inventoryapp} />
                                 <WorkItem workitem={atricureapp} />
                             </div>                  
