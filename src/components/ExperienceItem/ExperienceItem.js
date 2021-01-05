@@ -13,12 +13,9 @@ export class ExperienceItem extends React.Component {
 
         return (
             <div className="ExperienceItem">
-                <div className="Experiences"> 
-                    <MicroModal trigger={(open) => <ExperienceCard experienceblock={this.props.experienceblock} open={open}/>} overrides={micromodalStyles}>
-                        {(close) => <ExperienceModal className='ExperienceModal' experienceblock={this.props.experienceblock} close={close}/>}
-                    </MicroModal>
-                </div>
-                
+                <MicroModal trigger={(open) => <ExperienceCard experienceblock={this.props.experienceblock} open={open}/>} overrides={micromodalStyles}>
+                    {(close) => <ExperienceModal className='ExperienceModal' experienceblock={this.props.experienceblock} close={close}/>}
+                </MicroModal>
             </div>
         );
     }
@@ -36,7 +33,7 @@ class ExperienceCard extends React.Component {
                 <div className="Experience-img">
                     <img src={this.props.experienceblock.logo} alt="AtriCure logo"></img>
                 </div> 
-                <b><h3>{this.props.experienceblock.role}</h3></b>
+                <h3>{this.props.experienceblock.role}</h3>
                 <div className="Experience-tags">
                     {this.props.experienceblock.tags.map((tagObject) => {
                         return (
@@ -81,6 +78,7 @@ let micromodalStyles = {
             minWidth: '275px',
             borderRadius: '35px',
             margin: '20px',
+            maxHeight: '70%',
         },
     },
 };

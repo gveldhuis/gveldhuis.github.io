@@ -23,7 +23,7 @@ class ExperienceBlock {
 var atricure = new ExperienceBlock(
     atricureLogo,
     "AtriCure, Inc.",
-    "Operations Engineering Co-op",
+    "Ops Engineering Co-op",
     "My term at AtriCure was nothing short of amazing. I implemented Lean on a manufacturing floor, developed an internal website to optimize factory staffing, and ultimately helped make a difference in the lives of patients with AFib.  Highlights include...",
     ["Implementing Lean which created $70,000 in annual savings", 
      "Developing Power-BI dashboard with 85% utilization rate", 
