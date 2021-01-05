@@ -6,7 +6,7 @@ import blueprintsWork from './BlueprintsWork.png'
 import { WorkItem } from '../WorkItem/WorkItem';
 
 class WorkBlock {
-    constructor(projectTitle, company, brief, tech, impact, image, workTag, langTags) {
+    constructor(projectTitle, company, brief, tech, impact, image, workTag, langTags, linkStatus, link) {
         this.projectTitle = projectTitle;
         this.company = company;
         this.brief = brief;
@@ -15,6 +15,8 @@ class WorkBlock {
         this.image = image;
         this.workTag = workTag;
         this.langTags = langTags;
+        this.linkStatus = linkStatus;
+        this.link = link;
     }
 }
 
@@ -27,6 +29,8 @@ var inventoryapp = new WorkBlock(
     blueprintsWork,
     {name: "Product Management", color: "#FAFF07"},
     [{name: "React", color: "#63E3FF"}, {name: "Django", color: "#FBC55D"}],
+    true,
+    "https://github.com/gveldhuis/BlueprintsInventoryApp",
 );
 
 var atricureapp = new WorkBlock(
@@ -38,6 +42,8 @@ var atricureapp = new WorkBlock(
     atricureWork,
     {name: "Full-Stack Development", color: "#FFC163"},
     [{name: "React", color: "#63E3FF"}, {name: "Node.js", color: "#32FB11"}],
+    false,
+    "",
 );
 
 export class Work extends React.Component {

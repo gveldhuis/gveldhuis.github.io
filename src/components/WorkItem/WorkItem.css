@@ -104,6 +104,8 @@
     color: #1340E1;
     display: flex;
     flex-direction: column;
+
+    line-height: 21px;
 }
 
 
@@ -115,22 +117,37 @@
     margin: 20px;
 }
 
-.Work-closebtn {
+.WorkModalFooter {
+    display: flex;
+    justify-content: center;
+}
+
+.WorkModalLearn, .Work-closebtn {
     width: 200px;
     align-self: center;
     border: none;
 
     padding: 10px;
+    margin: 10px;
     border-radius: 30px;
 
     background: #1340E1;
     color: white;
 
     cursor: pointer;
+
+    text-align: center;
 }
 
-.Work-closebtn:focus {
+.Work-closebtn:focus, .WorkModalLearn:focus {
     outline: none;
+    text-decoration: none;
+    color: white;
+}
+
+.WorkModalLearn {
+    background-color: green;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 960px) {
