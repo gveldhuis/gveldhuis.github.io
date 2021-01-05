@@ -115,6 +115,9 @@
     width: auto;
 
     margin: 20px;
+
+    border: 5px solid #1340E1;
+    border-radius: 20px;
 }
 
 .WorkModalFooter {
