@@ -29,10 +29,25 @@ class ExperienceCard extends React.Component {
         super(props);
     }
     render() {
+        let tags = this.props.experienceblock.tags;
+
         return (
-            <div className="Experience-img">
-                <img onClick={this.props.open} src={this.props.experienceblock.logo} alt="AtriCure logo"></img>
-            </div> 
+            <div className="Experience-card" onClick={this.props.open}>
+                <div className="Experience-img">
+                    <img src={this.props.experienceblock.logo} alt="AtriCure logo"></img>
+                </div> 
+                <b><h3>{this.props.experienceblock.role}</h3></b>
+                <div className="Experience-tags">
+                    {this.props.experienceblock.tags.map((tagObject) => {
+                        return (
+                            <span className="Experience-tag">
+                                <i className="fas fa-circle" style={{color: tagObject.color}}></i>
+                                <h4 style={{color: tagObject.color}}>{tagObject.tag}</h4>
+                            </span>
+                        );        
+                    })}
+                </div>
+            </div>
         );
     }
 }
@@ -62,7 +77,7 @@ class ExperienceModal extends React.Component {
 let micromodalStyles = {
     Dialog: {
         style: {
-            maxWidth: '1500px',
+            maxWidth: '1100px',
             minWidth: '275px',
             borderRadius: '35px',
             margin: '20px',
