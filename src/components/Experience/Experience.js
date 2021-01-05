@@ -8,6 +8,7 @@ import atricureLogo from './atricureLogo.png';
 import blueprintsLogo from './blueprintsLogo.png';
 import childrensLogo from './cincinnatichildrensLogo.png';
 import michiganLogo from './michiganmedicineLogo.png';
+import medvisionLogo from './medvisionLogo.png';
 
 class ExperienceBlock {
     constructor(logo, company, role, explanation, highlights, tags) {
@@ -19,6 +20,15 @@ class ExperienceBlock {
         this.tags = tags;
     }
 } 
+
+var medvision = new ExperienceBlock(
+    medvisionLogo,
+    "MedVision",
+    "Software Developer",
+    "MedVision is an early-stage startup aimed at creating IoT devices to help hospitals automate their supply chain. As a Softare Developer, I am responsible for creating full-stack web and native applications for our MVP. Highlights include...",
+    ["Developing client-facing web-app to gain exposure for business, with complete React front-end and account management system", "Creating React Native application with BLE connectivity"],
+    [{tag: "Software Dev", color: "green"}],
+);
 
 var atricure = new ExperienceBlock(
     atricureLogo,
@@ -70,6 +80,7 @@ export class Experience extends React.Component {
                     <div className="Experience-container">
                         <h1 className="Experience-header">Experience.</h1>
                             <div className="Experience-Items">
+                                <ExperienceItem experienceblock={medvision} />
                                 <ExperienceItem experienceblock={atricure} />
                                 <ExperienceItem experienceblock={blueprints} />
                                 <ExperienceItem experienceblock={michiganmedicine} />
