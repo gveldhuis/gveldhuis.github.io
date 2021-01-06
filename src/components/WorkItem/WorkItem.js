@@ -67,7 +67,7 @@ class WorkModal extends React.Component {
                             <b>Impact:</b> {this.props.workitem.impact}
                         </p>
                     </div>
-                    <img alt="Project screenshot" src={this.props.workitem.image}></img>
+                    <img alt="" src={this.props.workitem.image}></img>
                 </div>
                 <div className="WorkModalFooter">
                     {this.props.workitem.link ? <a  className="WorkModalLearn" href={this.props.workitem.link}>Learn More...</a>: ""}
