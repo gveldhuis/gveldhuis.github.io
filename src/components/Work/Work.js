@@ -51,7 +51,7 @@ var atricureapp = new WorkBlock(
     "Utilized React.js fronted with a Node.js backend, connected to mySQL database.",
     "85% utilization among supervisors after 2 weeks.",
     atricureWork,
-    {name: "Full-Stack Development", color: "#FFC163"},
+    {name: "Full-Stack Dev", color: "#FFC163"},
     [{name: "React", color: "#63E3FF"}, {name: "Node.js", color: "#32FB11"}],
     "",
 );

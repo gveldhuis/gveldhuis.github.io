@@ -5,10 +5,6 @@ import MicroModal from 'react-micro-modal';
 
 
 export class ExperienceItem extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
 
         return (
@@ -22,9 +18,6 @@ export class ExperienceItem extends React.Component {
 }
 
 class ExperienceCard extends React.Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         let tags = this.props.experienceblock.tags;
 
@@ -50,9 +43,6 @@ class ExperienceCard extends React.Component {
 }
 
 class ExperienceModal extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         let highlights = this.props.experienceblock.highlights;

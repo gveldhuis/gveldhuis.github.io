@@ -162,6 +162,31 @@
     .Experience-text p {
         font-size: 16px;
     }
+}
 
-    
+@media screen and (max-width: 450px) {
+    .Experience-card {
+        width: 230px;
+        margin: 10px;
+    }
+
+    .Experience-card h3 {
+        font-size: 18px;
+    }
+
+    .Experience-tags {
+        font-size: 12px;
+    }
+
+    .Experience-img {
+        width: 230px;
+    }
+
+    .Experience-img img {
+        max-width: 210px;
+        padding: 10px;
+        height: auto;
+    }
+
+
 }
