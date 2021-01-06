@@ -19,7 +19,6 @@ export class ExperienceItem extends React.Component {
 
 class ExperienceCard extends React.Component {
     render() {
-        let tags = this.props.experienceblock.tags;
 
         return (
             <div className="Experience-card" onClick={this.props.open}>

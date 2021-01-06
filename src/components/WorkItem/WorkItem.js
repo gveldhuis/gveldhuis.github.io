@@ -5,9 +5,6 @@ import MicroModal from 'react-micro-modal';
 
 
 export class WorkItem extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
 
@@ -22,9 +19,7 @@ export class WorkItem extends React.Component {
 }
 
 class WorkCard extends React.Component {
-    constructor(props) {
-        super(props);
-    }
+
     render() {
 
         return (
@@ -56,9 +51,6 @@ class WorkCard extends React.Component {
 }
 
 class WorkModal extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         return (
@@ -75,7 +67,7 @@ class WorkModal extends React.Component {
                             <b>Impact:</b> {this.props.workitem.impact}
                         </p>
                     </div>
-                    <img src={this.props.workitem.image}></img>
+                    <img alt="Project screenshot" src={this.props.workitem.image}></img>
                 </div>
                 <div className="WorkModalFooter">
                     {this.props.workitem.link ? <a  className="WorkModalLearn" href={this.props.workitem.link}>Learn More...</a>: ""}
