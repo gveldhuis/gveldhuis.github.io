@@ -24,8 +24,8 @@ var medvision = new ExperienceBlock(
     medvisionLogo,
     "MedVision",
     "Software Developer",
-    "MedVision is an early-stage startup aimed at creating IoT devices to help hospitals automate their supply chain. As a Softare Developer, I am responsible for creating full-stack web and native applications for our MVP. Highlights include...",
-    ["Developing client-facing web-app to gain exposure for business, with complete React front-end and account management system", "Creating React Native application with BLE connectivity"],
+    "MedVision is a healthcare startup aimed at creating IoT devices to help hospitals automate and manage their supply chain. As a Softare Developer, I am responsible for creating full-stack web and native applications for our MVP. My favorite project so far include...",
+    ["Developing client-facing web-app to gain exposure for business, with complete React front-end and account management system", "Creating React Native application with BLE connectivity to IoT device"],
     [{tag: "Software Dev", color: "green"}],
 );
 
@@ -34,10 +34,10 @@ var atricure = new ExperienceBlock(
     "AtriCure, Inc.",
     "Ops Engineering Co-op",
     "My term at AtriCure was nothing short of amazing. I implemented Lean on a manufacturing floor, developed an internal website to optimize factory staffing, and ultimately helped make a difference in the lives of patients with AFib.  Highlights include...",
-    ["Implementing Lean which created $70,000 in annual savings", 
-     "Developing Power-BI dashboard with 85% utilization rate", 
+    ["Implementing lean initiatives that created $70,000 in annual savings", 
+     "Developing Power-BI dashboard with 85% utilization rate among staff", 
      "Creating React.js web-app to optimize line staffing"],
-    [{tag: "Mfg Engineering", color: "red"}, {tag: "Software Dev", color: "green"}],
+    [{tag: "Process Engineering", color: "red"}, {tag: "Software Dev", color: "green"}],
 );
 
 var blueprints = new ExperienceBlock(
@@ -45,9 +45,10 @@ var blueprints = new ExperienceBlock(
     "Blueprints For Pangaea",
     "COO, Product Manager",
     "Blueprints is a student-run, 501-(c)(3) nonprofit that ships excess medical supplies overseas. Serving as COO has been the honor of a lifetime, as Blueprints combines my passion for healthcare, love for technology, and drive to create positive efficiency in the world. My favorite moments include...",
-    ["Acting as Product Manager for internal web-app, winning $20,000 in University funding and creating 150% efficiency increase", 
-     "Leading Operational strategy for 7 national University chapters shipping $1M of medical supplies yearly",
-     "Coordinating donation of $12,000 worth of PPE to community organizations amid COVID-19",
+    ["Acting as Product Manager for internal web-app, which has won $20,000 in University funding and created 150% operational efficiency increase", 
+     "Overseeing operational strategy for 7 national University chapters shipping $1M of medical supplies overseas yearly",
+     "Coordinating logistics with nationally accredited NGO with $XXXM revenues, resulting in shipment of 75,000lbs of medical supplies to date",
+     "Spearheading procurement and donation of $12,000 worth of PPE to community organizations amid COVID-19",
     ],
     [{tag: "Leadership", color: "orange"}, {tag: "Product Management", color: "purple"}],
 );
