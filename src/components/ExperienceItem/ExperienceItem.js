@@ -50,6 +50,7 @@ class ExperienceModal extends React.Component {
             <div className="Experience-text">
                 <h1 className="Experience-itemheader">{this.props.experienceblock.company}</h1>
                 <h2 className="Experience-itemrole">{this.props.experienceblock.role}</h2>
+                <h3 className="Experience-itemtime">{this.props.experienceblock.time}</h3>
                 <p className="Experience-description">
                     {this.props.experienceblock.explanation}<br /><br />
                     <b>{highlights.map((highlight) => <><li>{highlight}</li><br /><br /></>)}</b>

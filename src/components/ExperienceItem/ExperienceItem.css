@@ -90,10 +90,15 @@
     font-size: 32px;
     font-style: italic;
 
-    margin-bottom: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 
     border-bottom: 3px solid white;
+}
+
+.Experience-itemtime {
+    font-size: 22px;
+    margin-bottom: 30px;
+    font-style: italic;
 }
 
 .Experience-description {
@@ -132,6 +137,11 @@
 
     .Experience-itemrole {
         font-size: 22px;
+    }
+
+    .Experience-itemtime {
+        font-size: 18px;
+        margin-bottom: 20px;
     }
 
 }
