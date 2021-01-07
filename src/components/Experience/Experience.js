@@ -39,9 +39,9 @@ var atricure = new ExperienceBlock(
     "Ops Engineering Co-op",
     "Aug. 2020 - Dec. 2020",
     "My term at AtriCure was nothing short of amazing. I implemented Lean on a manufacturing floor, developed an internal website to optimize factory staffing, and ultimately helped make a difference in the lives of patients with AFib.  Highlights include...",
-    ["Implementing lean initiatives that created $70,000 in annual savings", 
-     "Developing Power-BI dashboard with 85% utilization rate among staff", 
-     "Creating React.js web-app to optimize line staffing"],
+    ["Conducting discrete-event simulations and enacting lean initiatives on a high-throughput assembly line to create 7% efficiency increase and $70k decrease in annual costs", 
+     "Synthesizing needs of departmental managers to create a comprehensive Power-BI dashboard, allowing for more data-driven status meetings for operations leadership", 
+     "Developing web-app with React and Node.js to optimize assembly-line staffing, leading to 85% utilization among managers in just 2 weeks"],
     [{tag: "Process Engineering", color: "red"}, {tag: "Software Dev", color: "green"}],
     "",
 );
