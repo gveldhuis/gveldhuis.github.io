@@ -10,6 +10,7 @@
     color: #1340E1;
     font-family: 'Raleway';
     font-size: 22px;
+    line-height: 25px;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
