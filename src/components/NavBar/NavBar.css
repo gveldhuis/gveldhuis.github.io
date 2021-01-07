@@ -52,6 +52,20 @@
     margin: 32px;
 }
 
+.NavBar-list a:hover {
+    text-decoration: none;
+    color: #14C9E1;
+}
+
+.NavBar.offset .NavBar-list a:hover {
+    text-decoration: none;
+    color: #14C9E1;
+}
+
+.NavBar.offset .NavBar-list.active a:hover {
+    text-decoration: none;
+    color: white;
+}
 
 /* NavBar offset from top of page */
 .NavBar.offset {
