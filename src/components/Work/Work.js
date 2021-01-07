@@ -29,7 +29,7 @@ var medvisionweb = new WorkBlock(
     medvisionWork,
     {name: "Full-Stack Dev", color: "#FFC163"},
     [{name: "React", color: "#63E3FF"}, {name: "Node.js", color: "#32FB11"}],
-    "",
+    "https://www.medvision.ai/",
 );
 
 var inventoryapp = new WorkBlock(

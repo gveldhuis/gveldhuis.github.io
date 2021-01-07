@@ -70,7 +70,7 @@ class WorkModal extends React.Component {
                     <img alt="" src={this.props.workitem.image}></img>
                 </div>
                 <div className="WorkModalFooter">
-                    {this.props.workitem.link ? <a  className="WorkModalLearn" href={this.props.workitem.link}>Learn More...</a>: ""}
+                    {this.props.workitem.link ? <a  className="WorkModalLearn" href={this.props.workitem.link}>See My Work...</a>: ""}
                     <button className="Work-closebtn" onClick={this.props.close}>Close</button>
                 </div>
             </div>
