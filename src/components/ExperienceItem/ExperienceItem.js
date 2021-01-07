@@ -55,7 +55,10 @@ class ExperienceModal extends React.Component {
                     {this.props.experienceblock.explanation}<br /><br />
                     <b>{highlights.map((highlight) => <><li>{highlight}</li><br /><br /></>)}</b>
                 </p>
-                <button className="Experience-closebtn" onClick={this.props.close}>Close</button>
+                <div className="ExperienceModalFooter">
+                    {this.props.experienceblock.more ? <a  className="ExperienceModalLearn" href={this.props.experienceblock.more}>Learn More...</a>: ""}
+                    <button className="Experience-closebtn" onClick={this.props.close}>Close</button>
+                </div>
             </div>
         );
     }

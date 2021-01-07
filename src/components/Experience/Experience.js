@@ -10,7 +10,7 @@ import michiganLogo from './michiganmedicineLogo.png';
 import medvisionLogo from './medvisionLogo.png';
 
 class ExperienceBlock {
-    constructor(logo, company, role, time, explanation, highlights, tags) {
+    constructor(logo, company, role, time, explanation, highlights, tags, more) {
         this.logo = logo;
         this.company = company;
         this.role = role;
@@ -18,6 +18,7 @@ class ExperienceBlock {
         this.explanation = explanation;
         this.highlights = highlights;
         this.tags = tags;
+        this.more = more;
     }
 } 
 
@@ -29,6 +30,7 @@ var medvision = new ExperienceBlock(
     "MedVision is a healthcare startup aimed at creating IoT devices to help hospitals automate and manage their supply chain. As a Softare Developer, I am responsible for creating full-stack web and native applications for our MVP. My favorite project so far include...",
     ["Developing client-facing web-app to gain exposure for business, with complete React front-end and account management system", "Creating React Native application with BLE connectivity to IoT device"],
     [{tag: "Software Dev", color: "green"}],
+    "https://www.medvision.ai/",
 );
 
 var atricure = new ExperienceBlock(
@@ -41,6 +43,7 @@ var atricure = new ExperienceBlock(
      "Developing Power-BI dashboard with 85% utilization rate among staff", 
      "Creating React.js web-app to optimize line staffing"],
     [{tag: "Process Engineering", color: "red"}, {tag: "Software Dev", color: "green"}],
+    "",
 );
 
 var blueprints = new ExperienceBlock(
@@ -55,6 +58,7 @@ var blueprints = new ExperienceBlock(
      "Spearheading procurement and donation of $12,000 worth of PPE to community organizations amid COVID-19",
     ],
     [{tag: "Leadership", color: "orange"}, {tag: "Product Management", color: "purple"}],
+    "https://www.blueprintsforpangaea.org",
 );
 
 var michiganmedicine = new ExperienceBlock(
@@ -65,6 +69,7 @@ var michiganmedicine = new ExperienceBlock(
     "In this role, I was able to build on my experience in clinical research by collecting patient data for a multi-center study. I also saw firsthand how the inefficiencies of our healthcare system holds back physicians and disadvantages patients. My most notable project involved...",
     ["Collecting 65 different clinical datapoints for 30+ complex patients, helping find statistically signifiant difference in outcomes for two common heart procedures."],
     [{tag: "Clinical Research", color: "blue"}],
+    "",
 );
 
 var childrens = new ExperienceBlock(
@@ -75,6 +80,7 @@ var childrens = new ExperienceBlock(
     "At one of the top children’s hospitals globally, I had the priviledge of working with patients and surgeons alike to conduct research on a broad array of abnormal heart conditions. My aunt and cousin have suffered heart conditions their entire life, which is why my passion for healthcare began here. My proudest achievement includes...",
     ["Co-authoring a poster presentation on novel diagnosis for complex heart condition, which was presented at 2019 AHA National Scientific Conference to +12,000 healthcare professionals."],
     [{tag: "Clinical Research", color: "blue"}],
+    "",
 );
 
 export class Experience extends React.Component {

@@ -106,22 +106,38 @@
     line-height: 22px;
 }
 
-.Experience-closebtn {
+
+.ExperienceModalFooter {
+    display: flex;
+    justify-content: center;
+}
+
+.ExperienceModalLearn, .Experience-closebtn {
     width: 200px;
     align-self: center;
     border: none;
 
     padding: 10px;
+    margin: 10px;
     border-radius: 30px;
 
     background: #1340E1;
     color: white;
 
     cursor: pointer;
+
+    text-align: center;
 }
 
-.Experience-closebtn:focus {
+.Experience-closebtn:focus, .ExperienceModalLearn:focus {
     outline: none;
+    text-decoration: none;
+    color: white;
+}
+
+.ExperienceModalLearn {
+    background-color: green;
+    text-decoration: none;
 }
 
 
@@ -142,6 +158,10 @@
     .Experience-itemtime {
         font-size: 18px;
         margin-bottom: 20px;
+    }
+
+    .ExperienceModalFooter {
+        flex-direction: column;
     }
 
 }
