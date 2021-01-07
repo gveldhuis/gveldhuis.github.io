@@ -27,7 +27,7 @@ var medvisionweb = new WorkBlock(
     "Website has a React frontend and Node.js backend with account management system, deployed through AWS",
     "Visually stunning portfolio of organization's mission and purpose, along with scalable account sign-up infrastructure",
     medvisionWork,
-    {name: "Full-Stack Dev", color: "#FAFF07"},
+    {name: "Full-Stack Dev", color: "#FFC163"},
     [{name: "React", color: "#63E3FF"}, {name: "Node.js", color: "#32FB11"}],
     "",
 );
