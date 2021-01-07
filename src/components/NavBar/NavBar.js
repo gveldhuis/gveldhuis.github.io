@@ -3,23 +3,28 @@ import './NavBar.css';
 import '../../../src/index.css'
 
 export function NavBar() {
-
-    /* Click state, top of page state */
+    /*Click state, at top of page state*/
     const [click, setClick] = useState(false);
     const [top, setTop] = useState(true);
 
-
-    /* Function that closes mobile side-menu */
+    /*On mobile, this function closes NavBar side-menu after link is clicked*/
     const closeMobileMenu = () => setClick(false);
 
-    /*Function that closes mobile menu when window width is greater than 1060px */
+    /*Toggles click state after menu click */
+    const handleMobileClick = () => {
+        setClick(!click);
+        console.log("THIS IS INSIDE handleMobileClick");
+    };
+    
+
+    /*Toggles Side-Nav Menu Based on Screen Size*/
     const resizeMenu = () => {
         if(window.innerWidth >= 1060) {
             setClick(false);
         }
     };
 
-    /* Toggles color of navmenu when scrolling position changes */
+    /*Toggles color of NavMenu based on scroll location on page*/
     const toggleNavMenu = () => {
         if(document.documentElement.scrollTop < 50) {
             setTop(true);
@@ -28,13 +33,7 @@ export function NavBar() {
         }
     }
 
-    /*//////////////////////////////////////////////////////////////////////*/
-
-    /* Handler functions */
-    const handleMobileClick = () => {
-        setClick(!click);
-    };
-
+    /*Creates scrolling event after NavBar link is clicked*/ 
     function handleLinkClick(event) {
         event.preventDefault();
 
@@ -42,16 +41,17 @@ export function NavBar() {
 
         const href = event.target.getAttribute("href");
         const offsetTop = document.querySelector(href).offsetTop;
+
+        
         
         window.scrollTo({
             top: offsetTop,
             behavior: "smooth",
-        })
+        });
+
     }
 
-    /*//////////////////////////////////////////////////////////////////////*/
-
-    /* Event listeners */
+    /*Window resizing event listener*/
     window.addEventListener('resize', resizeMenu);
     window.addEventListener('scroll', toggleNavMenu);
 

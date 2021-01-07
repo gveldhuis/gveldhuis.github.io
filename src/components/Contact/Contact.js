@@ -63,7 +63,7 @@ class Contact extends React.Component {
                             <textarea name="Contact-input-message" className="Contact-input" id="Contact-input-message" placeholder="Message" type="text" required></textarea>
 
                             <label for="Contact-input-submit"></label>
-                            <input name="submit" type="submit" id="Contact-input-submit" class="Contact-submit" value={this.state.submitStatus ? "Thank You!" : "Submit"}/>
+                            <input name="submit" type="submit" id="Contact-input-submit" className="Contact-submit" value={this.state.submitStatus ? "Thank You!" : "Submit"}/>
                         </form>
                     </div>
                     <div className="Contact-submit-message" style={{display: this.state.submitStatus ? "flex" : "none"}}>
