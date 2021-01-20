@@ -27,7 +27,7 @@ var medvision = new ExperienceBlock(
     "MedVision",
     "Software Developer",
     "Nov. 2020 - Present",
-    "MedVision is a healthcare startup that is creating IoT devices to help hospitals automate and manage their supply chain. As a Softare Developer, I am responsible for creating full-stack web and native applications that support product development. My favorite projects so far include...",
+    "MedVision is a healthcare startup that is creating IoT devices to help hospitals automate and manage their supply chain. As a Software Developer, I am responsible for creating full-stack web and native applications that support product development. My favorite projects so far include...",
     ["Developing a client-facing web-app to gain exposure for business, with complete React front-end and account management system", "Creating React Native application with robust BLE connectivity to IoT device"],
     [{tag: "Software Dev", color: "green"}],
     "https://www.medvision.ai/",
