@@ -23,12 +23,12 @@ class App extends React.Component {
     return (
       <div>
         <NavBar />
-        <Intro />
+        {/*<Intro />
         <AboutMe />
         <Experience />
         <Skills />
         <Work />
-        <Contact />
+        <Contact />*/}
 
 
 

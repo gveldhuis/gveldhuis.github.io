@@ -62,7 +62,7 @@ export function NavBar() {
                 <i className="fas fa-bars"></i>
             </div>
             <div className={click ? 'NavBar-list active' : 'NavBar-list'}>
-                <a href='#AboutMe' onClick={handleLinkClick}>About Me</a>
+                <a href='#AboutMe' onClick={handleLinkClick}>About</a>
                 <a href='#Experience' onClick={handleLinkClick}>Experience</a>
                 <a href='#Work' onClick={handleLinkClick}>My Work</a>
                 <a href='#Contact' onClick={handleLinkClick}>Contact</a>
