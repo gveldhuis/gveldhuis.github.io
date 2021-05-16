@@ -1,6 +1,12 @@
 import React, {useState} from 'react';
 import './NavBar.css';
 import '../../../src/index.css'
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
 
 export function NavBar(props) {
 
@@ -60,12 +66,35 @@ export function NavBar(props) {
             <div className='NavBar-menuicon' onClick={handleMobileClick}>
                 <i className="fas fa-bars"></i>
             </div>
-            <div className={click ? 'NavBar-list active' : 'NavBar-list'}>
-                <a id='AboutMe' href='#AboutMe' onClick={handleLinkClick}>About</a>
-                <a id='Experience' href='#Experience' onClick={handleLinkClick}>Experience</a>
-                <a id='Work' href='#Work' onClick={handleLinkClick}>My Work</a>
-                <a id='Contact' href='#Contact' onClick={handleLinkClick}>Contact</a>
-            </div>
+            <Router>
+                <div className={click ? 'NavBar-list active' : 'NavBar-list'}>
+                    <nav>
+                        <Link to='/' id='AboutMe' onClick={handleLinkClick}>About</Link>
+                        <Link to='/experience' id='Experience' onClick={handleLinkClick}>Experience</Link>
+                        <Link to='/work' id='Work' onClick={handleLinkClick}>Work</Link>
+                        <Link to='/contact' id='Contact' onClick={handleLinkClick}>Contact</Link>
+                    </nav>
+
+                    <Switch>
+                        <Route path='/experience'>
+                            <Experience />
+                        </Route>
+                        <Route path='work'>
+                            <Work />
+                        </Route>
+                        <Route path='contact'>
+                            <Contact />
+                        </Route>
+                    </Switch>
+
+
+
+                    {/* <a id='AboutMe' href='#AboutMe' onClick={handleLinkClick}>About</a>
+                    <a id='Experience' href='#Experience' onClick={handleLinkClick}>Experience</a>
+                    <a id='Work' href='#Work' onClick={handleLinkClick}>My Work</a>
+                    <a id='Contact' href='#Contact' onClick={handleLinkClick}>Contact</a> */}
+                </div>
+            </Router>
         </nav>
         );
 
