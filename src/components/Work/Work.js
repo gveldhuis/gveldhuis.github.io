@@ -60,7 +60,7 @@ export class Work extends React.Component {
     render() {
         return (
             <div>
-                <div id="Work"></div>
+                <div id="WorkPage"></div>
                     <div className="Work">
                         <div className="Work-container">
                             <h1 className="Work-header">My Work.</h1>

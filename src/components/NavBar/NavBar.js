@@ -2,7 +2,8 @@ import React, {useState} from 'react';
 import './NavBar.css';
 import '../../../src/index.css'
 
-export function NavBar() {
+export function NavBar(props) {
+
     /*Click state, at top of page state*/
     const [click, setClick] = useState(false);
     const [top, setTop] = useState(true);
@@ -51,10 +52,8 @@ export function NavBar() {
 
     }
 
-    /*Window resizing event listener*/
-    window.addEventListener('resize', resizeMenu);
-    window.addEventListener('scroll', toggleNavMenu);
 
+    
     return (
         <nav className={top ? 'NavBar' : 'NavBar offset'}>
             <h1 className='NavBar-nameLogo'>GRANT VELDHUIS</h1>
@@ -62,11 +61,14 @@ export function NavBar() {
                 <i className="fas fa-bars"></i>
             </div>
             <div className={click ? 'NavBar-list active' : 'NavBar-list'}>
-                <a href='#AboutMe' onClick={handleLinkClick}>About</a>
-                <a href='#Experience' onClick={handleLinkClick}>Experience</a>
-                <a href='#Work' onClick={handleLinkClick}>My Work</a>
-                <a href='#Contact' onClick={handleLinkClick}>Contact</a>
+                <a id='AboutMe' href='#AboutMe' onClick={handleLinkClick}>About</a>
+                <a id='Experience' href='#Experience' onClick={handleLinkClick}>Experience</a>
+                <a id='Work' href='#Work' onClick={handleLinkClick}>My Work</a>
+                <a id='Contact' href='#Contact' onClick={handleLinkClick}>Contact</a>
             </div>
         </nav>
         );
+
+    let pageName = props.page;
+    document.getElementById("Experience").style.fontWeight = 800;
 }

@@ -36,7 +36,7 @@ class Contact extends React.Component {
     render() {
         return (
             <div>
-                <div id="Contact"></div>
+                <div id="ContactPage"></div>
                 <div className="Contact">
                     <div className="Contact-container" style={{display: this.state.submitStatus ? "none" : "flex"}}>
                         <h1 className="Contact-header">Now that you've met me, I'd love to meet you.</h1>
