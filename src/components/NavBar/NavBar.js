@@ -1,6 +1,5 @@
 import React, {useState, useEffect, Component} from 'react';
 import './NavBar.css';
-import '../../../src/index.css'
 import {
     BrowserRouter as Router,
     Switch,

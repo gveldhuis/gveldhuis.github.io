@@ -4,6 +4,8 @@
     display: block;
     margin-top: -80px;
     padding-top: 80px;
+
+
 }
 
 .AboutMe {
@@ -12,15 +14,12 @@
     font-size: 22px;
     line-height: 25px;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 30px;
-    row-gap: 65px;
-    width: 100%;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 1400px;
+
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 66%;
+    height: 80%;
 }
 
 .AboutMe-header {
