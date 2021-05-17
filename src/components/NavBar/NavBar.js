@@ -7,6 +7,7 @@ import {
     Route,
     Link
   } from "react-router-dom";
+import Experience404 from '../404/Experience404'
 
 export function NavBar(props) {
 
@@ -68,27 +69,23 @@ export function NavBar(props) {
             </div>
             <Router>
                 <div className={click ? 'NavBar-list active' : 'NavBar-list'}>
-                    <nav>
-                        <Link to='/' id='AboutMe' onClick={handleLinkClick}>About</Link>
-                        <Link to='/experience' id='Experience' onClick={handleLinkClick}>Experience</Link>
-                        <Link to='/work' id='Work' onClick={handleLinkClick}>Work</Link>
-                        <Link to='/contact' id='Contact' onClick={handleLinkClick}>Contact</Link>
-                    </nav>
+                    <Link to='/' id='AboutMe'>About</Link>
+                    <Link to='/experience' id='Experience'>Experience</Link>
+                    <Link to='/work' id='Work'>Work</Link>
+                    <Link to='/contact' id='Contact'>Contact</Link>
 
                     <Switch>
                         <Route path='/experience'>
-                            <Experience />
+                            <Experience404 />
                         </Route>
-                        <Route path='work'>
-                            <Work />
+                        <Route path='/work'>
+                            <Experience404 />
                         </Route>
-                        <Route path='contact'>
-                            <Contact />
+                        <Route path='/contact'>
+                            <Experience404 />
                         </Route>
                     </Switch>
-
-
-
+                    
                     {/* <a id='AboutMe' href='#AboutMe' onClick={handleLinkClick}>About</a>
                     <a id='Experience' href='#Experience' onClick={handleLinkClick}>Experience</a>
                     <a id='Work' href='#Work' onClick={handleLinkClick}>My Work</a>
