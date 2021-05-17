@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect, Component} from 'react';
 import './NavBar.css';
 import '../../../src/index.css'
 import {
@@ -41,25 +41,27 @@ export function NavBar(props) {
         }
     }
 
+    useEffect(() => {
+        document.getElementById(props.page).style.fontWeight = 800;
+    });
+
     /*Creates scrolling event after NavBar link is clicked*/ 
-    function handleLinkClick(event) {
-        event.preventDefault();
+    // function handleLinkClick(event) {
+    //     event.preventDefault();
 
-        closeMobileMenu();
+    //     closeMobileMenu();
 
-        const href = event.target.getAttribute("href");
-        const offsetTop = document.querySelector(href).offsetTop;
+    //     const href = event.target.getAttribute("href");
+    //     const offsetTop = document.querySelector(href).offsetTop;
 
         
         
-        window.scrollTo({
-            top: offsetTop,
-            behavior: "smooth",
-        });
+    //     window.scrollTo({
+    //         top: offsetTop,
+    //         behavior: "smooth",
+    //     });
 
-    }
-
-
+    // }
     
     return (
         <nav className={top ? 'NavBar' : 'NavBar offset'}>
@@ -85,7 +87,7 @@ export function NavBar(props) {
                             <Experience404 />
                         </Route>
                     </Switch>
-                    
+
                     {/* <a id='AboutMe' href='#AboutMe' onClick={handleLinkClick}>About</a>
                     <a id='Experience' href='#Experience' onClick={handleLinkClick}>Experience</a>
                     <a id='Work' href='#Work' onClick={handleLinkClick}>My Work</a>
@@ -95,6 +97,6 @@ export function NavBar(props) {
         </nav>
         );
 
-    let pageName = props.page;
-    document.getElementById("Experience").style.fontWeight = 800;
+        
+
 }

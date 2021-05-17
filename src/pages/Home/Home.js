@@ -6,7 +6,7 @@ export class Home extends React.Component {
   render() {
     return (
       <>
-        <NavBar page="AboutMe" />
+        <NavBar page="Experience" />
       </>
     );
   }
