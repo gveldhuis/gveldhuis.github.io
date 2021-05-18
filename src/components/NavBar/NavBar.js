@@ -7,6 +7,7 @@ import {
     Link
   } from "react-router-dom";
 import Experience404 from '../404/Experience404'
+import Experience from '../../pages/ExperiencePage/ExperiencePage'
 
 export function NavBar(props) {
 
@@ -77,7 +78,7 @@ export function NavBar(props) {
 
                     <Switch>
                         <Route path='/experience'>
-                            <Experience404 />
+                            <Experience />
                         </Route>
                         <Route path='/work'>
                             <Experience404 />

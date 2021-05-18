@@ -12,7 +12,11 @@
     font-family: 'Raleway';
     font-size: 22px;
 
-    width: 100%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 66%;
+    height: 80%;
 }
 
 .Experience-container {
