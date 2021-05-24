@@ -1,13 +1,15 @@
 import React from 'react';
 
-class Experience404 extends React.Component {
+
+import { NavBar } from '../../components/NavBar/NavBar';
+
+export class Experience404 extends React.Component {
   render() {
     return (
-      <div>
-          <p>Experience 404 Under Construction</p>
+      <div className='Format'>
+        <NavBar page="Experience" />
+        <p>Hello there just trying to figure myself out thank you</p>
       </div>
     );
   }
 }
-
-export default Experience404;

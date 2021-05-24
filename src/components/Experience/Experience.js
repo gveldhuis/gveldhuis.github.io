@@ -86,21 +86,31 @@ var childrens = new ExperienceBlock(
 export class Experience extends React.Component {
     render() {
         return (
-            <>
-                <div id="ExperiencePage"></div>
-                <div className="Experience">
-                    <div className="Experience-container">
-                        <h1 className="Experience-header">Experience.</h1>
-                            <div className="Experience-Items">
-                                <ExperienceItem experienceblock={medvision} />
-                                <ExperienceItem experienceblock={atricure} />
-                                <ExperienceItem experienceblock={blueprints} />
-                                <ExperienceItem experienceblock={michiganmedicine} />
-                                <ExperienceItem experienceblock={childrens} />
-                            </div>
-                    </div>
-                </div>                
-            </>
-        );
+            <div className="Experience">
+                <p>This is the experience page!</p>
+            </div>
+        )
     }
 }
+
+// export class Experience extends React.Component {
+//     render() {
+//         return (
+//             <>
+//                 <div id="ExperiencePage"></div>
+//                 <div className="Experience">
+//                     <div className="Experience-container">
+//                         <h1 className="Experience-header">Experience.</h1>
+//                             <div className="Experience-Items">
+//                                 <ExperienceItem experienceblock={medvision} />
+//                                 <ExperienceItem experienceblock={atricure} />
+//                                 <ExperienceItem experienceblock={blueprints} />
+//                                 <ExperienceItem experienceblock={michiganmedicine} />
+//                                 <ExperienceItem experienceblock={childrens} />
+//                             </div>
+//                     </div>
+//                 </div>                
+//             </>
+//         );
+//     }
+// }

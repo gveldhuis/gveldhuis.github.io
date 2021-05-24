@@ -4,13 +4,15 @@ import './index.css';
 import App from '../src/components/App/App';
 import reportWebVitals from './reportWebVitals';
 import smoothscroll from 'smoothscroll-polyfill';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Routes } from './routes'
 
 smoothscroll.polyfill();
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <Routes />
+  </Router>,
   document.getElementById('root')
 );
 

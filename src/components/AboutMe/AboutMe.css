@@ -55,7 +55,6 @@
 
 .AboutMe a:hover {
     cursor: pointer;
-    color: #14C9E1;
 }
 
 @media screen and (max-width: 1060px) {

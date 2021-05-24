@@ -6,8 +6,9 @@ import {
     Route,
     Link
   } from "react-router-dom";
-import Experience404 from '../404/Experience404'
+import { Experience404 } from '../404/Experience404'
 import { ExperiencePage } from '../../pages/ExperiencePage/ExperiencePage'
+import { HomePage } from '../../pages/HomePage/HomePage';
 
 export function NavBar(props) {
 
@@ -40,15 +41,17 @@ export function NavBar(props) {
         }
     }
 
-    /*Creates scrolling event after NavBar link is clicked*/ 
-    function handleLinkClick(event) {
-        event.preventDefault();
-        closeMobileMenu();
-    }
-
+    const pages = ['aboutme', 'experience', 'work', 'contact']
 
     useEffect(() => {
-        document.getElementById(props.page).style.fontWeight = 800;
+        for (const page of pages) {
+            if(page === props.page) {
+                document.getElementById(props.page).style.fontWeight = 800;
+            }
+            else {
+                document.getElementById(page).style.fontWeight = 300;
+            }
+        }
     });
 
     window.addEventListener('resize', resizeMenu);
@@ -61,26 +64,12 @@ export function NavBar(props) {
             <div className='NavBar-menuicon' onClick={handleMobileClick}>
                 <i className="fas fa-bars"></i>
             </div>
-            <Router>
                 <div className={click ? 'NavBar-list active' : 'NavBar-list'}>
-                    <Link onClick={handleLinkClick} to='/' id='AboutMe'>About</Link>
-                    <Link onClick={handleLinkClick} to='/experience' id='Experience'>Experience</Link>
-                    <Link onClick={handleLinkClick} to='/work' id='Work'>Work</Link>
-                    <Link onClick={handleLinkClick} to='/contact' id='Contact'>Contact</Link>
-
-                    <Switch>
-                        <Route path='/experience'>
-                            <ExperiencePage />
-                        </Route>
-                        <Route path='/work'>
-                            <Experience404 />
-                        </Route>
-                        <Route path='/contact'>
-                            <Experience404 />
-                        </Route>
-                    </Switch>
+                    <Link onClick={closeMobileMenu} to='/aboutme' id='aboutme'>About</Link>
+                    <Link onClick={closeMobileMenu} to='/experience' id='experience'>Experience</Link>
+                    <Link onClick={closeMobileMenu} to='/work' id='work'>Work</Link>
+                    <Link onClick={closeMobileMenu} to='/contact' id='contact'>Contact</Link>
                 </div>
-            </Router>
         </nav>
         );
 
