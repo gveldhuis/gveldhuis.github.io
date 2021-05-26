@@ -44,12 +44,13 @@ export function NavBar(props) {
     const pages = ['aboutme', 'experience', 'work', 'contact']
 
     useEffect(() => {
-        for (const page of pages) {
-            if(page === props.page) {
-                document.getElementById(props.page).style.fontWeight = 800;
+        for (const route of pages) {
+            let test = props.page.includes(route);
+            if(test) {
+                document.getElementById(route).style.fontWeight = 800;
             }
             else {
-                document.getElementById(page).style.fontWeight = 300;
+                document.getElementById(route).style.fontWeight = 300;
             }
         }
     });

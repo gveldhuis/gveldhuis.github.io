@@ -1,0 +1,61 @@
+.ExperienceContent {
+    background-color: #1340E1;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 22px;
+    line-height: 25px;
+    
+    display: block;
+    overflow: auto;
+    
+    
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 75%;
+    height: 100%;
+    
+    padding: 40px;
+}
+
+.fa-times {
+    display: block;
+    position: fixed;
+    right: 80px;
+    top: 50px;
+    cursor: pointer;
+
+    color: white;
+
+    font-size: 2.8rem;
+}
+
+.ExperienceContent-title {
+    font-size: 55px;
+    font-weight: 600;
+
+    margin-bottom: 10px;
+}
+
+.ExperienceContent-role, .ExperienceContent-date {
+    font-size: 30px;
+    font-style: italic;
+
+    margin-bottom: 10px;
+}
+
+.ExperienceContent-date {
+    font-size: 28px;
+    font-style: italic;
+
+    margin-bottom: 40px;
+}
+
+.ExperienceContent-explanation {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.ExperienceContent-highlights {
+    font-size: 20px;
+}

@@ -6,8 +6,18 @@ import { Experience } from './components/Experience/Experience'
 import { NavBar } from './components/NavBar/NavBar';
 import { Route, Switch, Redirect, useLocation } from 'react-router-dom';
 
+import medvisionLogo from './components/Experience/medvisionLogo.png'
+
+import { ExperienceContent } from './components/ExperienceContent/ExperienceContent'
+import { companies } from './components/Experience/ExperienceData'
+
+
+
 export const Routes = () => {
     const location = useLocation().pathname.toString().substring(1);
+
+
+
   return (
     <div>
         <NavBar page={location}/>
@@ -17,6 +27,11 @@ export const Routes = () => {
             </Route>
             <Route path='/experience'>
                 <Experience />
+                {companies.map(company => (
+                    <Route path={company.path}>
+                        <ExperienceContent experienceblock={company} />
+                    </Route>
+                ))}
             </Route>
             <Route path='/work'>
                 <AboutMe />

@@ -15,10 +15,12 @@
     position: fixed;
     right: 0;
     bottom: 0;
-    width: 70%;
-    height: 87%;
+    width: 75%;
+    height: 100%;
 
     padding: 40px;
+
+    overflow: scroll;
 }
 
 
@@ -29,18 +31,19 @@
     margin: auto;
     margin-top: 20px;
     padding: 20px;
-    max-width: 1400px;
-}
-
-.Experience-header {
-    font-weight: bold;
-    font-size: 82px;
-    margin-bottom: 30px;
 }
 
 .Experience-Items {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+@media screen and (max-width: 1060px) {
+    .Experience {
+        display: block;
+        width: 100%;
+        padding-top: 150px;
+    }
 }
 
