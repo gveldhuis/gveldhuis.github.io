@@ -3,6 +3,7 @@ import blueprintsLogo from './blueprintsLogo.png';
 import childrensLogo from './cincinnatichildrensLogo.png';
 import michiganLogo from './michiganmedicineLogo.png';
 import medvisionLogo from './medvisionLogo.png';
+import mayoclinicLogo from './mayoclinicLogo2.png'
 
 class ExperienceBlock {
     constructor(logo, company, role, time, explanation, highlights, tags, more, path) {
@@ -17,6 +18,18 @@ class ExperienceBlock {
         this.path = path;
     }
 } 
+
+var mayoclinic = new ExperienceBlock(
+    mayoclinicLogo,
+    "Mayo Clinic",
+    "IT Intern",
+    "Starting Jun. 2021",
+    "In June, I will be working with a team of full-stack developers to create applications for nearly 65,000 clinicians and 1M patients across Mayo's global health system. I know, I can't believe it either!",
+    [],
+    [{tag: "Software Dev", color: "green"}],
+    "https://www.mayoclinic.org",
+    '/experience/mayoclinic'
+);
 
 var medvision = new ExperienceBlock(
     medvisionLogo,
@@ -84,4 +97,4 @@ var childrens = new ExperienceBlock(
     '/experience/childrens'
 );
 
-export let companies = [medvision, atricure, blueprints, michiganmedicine, childrens];
+export let companies = [mayoclinic, medvision, atricure, blueprints, michiganmedicine, childrens];
