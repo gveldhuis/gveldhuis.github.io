@@ -11,7 +11,7 @@ export class ExperienceCard extends React.Component {
                     <div className="Experience-img">
                         <img src={this.props.experienceblock.logo} alt="AtriCure logo"></img>
                     </div> 
-                    <h3>{this.props.experienceblock.role}</h3>
+                    <h3 className="Experience-role">{this.props.experienceblock.role}</h3>
                     <div className="Experience-tags">
                         {this.props.experienceblock.tags.map((tagObject) => {
                             return (

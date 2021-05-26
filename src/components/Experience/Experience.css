@@ -1,11 +1,3 @@
-#ExperiencePage {
-    content: " ";
-    visibility: none;
-    display: block;
-    margin-top: -80px;
-    padding-top: 80px;   
-}
-
 .Experience {
     background: #1340E1;
     color: white;
@@ -21,10 +13,7 @@
     padding: 40px;
 
     overflow: scroll;
-}
 
-
-.Experience-container {
     display: flex;
     flex-direction: column;
 

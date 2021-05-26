@@ -39,7 +39,7 @@ var atricure = new ExperienceBlock(
     ["Conducting discrete-event simulations and enacting lean initiatives on a high-throughput assembly line to create 7% efficiency increase and $70k decrease in annual costs", 
      "Synthesizing needs of departmental managers to create a comprehensive Power-BI dashboard, allowing for more data-driven status meetings for operations leadership", 
      "Developing web-app with React and Node.js to optimize assembly-line staffing, leading to 85% utilization among managers in just 2 weeks"],
-    [{tag: "Process Engineering", color: "red"}, {tag: "Software Dev", color: "green"}],
+    [{tag: "Process Eng.", color: "red"}, {tag: "Software Dev", color: "green"}],
     "",
     '/experience/atricure'
 );
@@ -55,7 +55,7 @@ var blueprints = new ExperienceBlock(
      "Coordinating logistics with nationally accredited NGO with $XXXM revenues, resulting in shipment of 75,000lbs of medical supplies to date",
      "Spearheading procurement and donation of $12,000 worth of PPE to community organizations amid COVID-19",
     ],
-    [{tag: "Leadership", color: "orange"}, {tag: "Product Management", color: "purple"}],
+    [{tag: "Leadership", color: "orange"}, {tag: "Product Mgmt.", color: "purple"}],
     "https://www.blueprintsforpangaea.org",
     '/experience/blueprints'
 );
