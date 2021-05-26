@@ -2,12 +2,15 @@ import React from 'react';
 
 import { AboutMe } from './components/AboutMe/AboutMe'
 import { Experience } from './components/Experience/Experience'
+import { Work } from './components/Work/Work'
 
 import { NavBar } from './components/NavBar/NavBar';
 import { Route, Switch, useLocation } from 'react-router-dom';
 
 import { ExperienceContent } from './components/ExperienceContent/ExperienceContent'
 import { companies } from './components/Experience/ExperienceData'
+
+
 
 
 
@@ -20,7 +23,7 @@ export const Routes = () => {
     <div>
         <NavBar page={location}/>
         <Switch>
-            <Route exact path='/aboutme'>
+            <Route exact path='/'>
                 <AboutMe />
             </Route>
             <Route path='/experience'>
@@ -32,7 +35,7 @@ export const Routes = () => {
                 ))}
             </Route>
             <Route path='/work'>
-                <AboutMe />
+                <Work />
             </Route>
             <Route path='/contact'>
                 <AboutMe />

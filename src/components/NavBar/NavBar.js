@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './NavBar.css';
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export function NavBar(props) {
 
@@ -32,17 +32,27 @@ export function NavBar(props) {
             setTop(false);
         }
     }
-
+    
+    let currLocation = useLocation().pathname;
     const pages = ['aboutme', 'experience', 'work', 'contact']
 
     useEffect(() => {
-        for (const route of pages) {
-            let test = props.page.includes(route);
-            if(test) {
-                document.getElementById(route).style.fontWeight = 800;
-            }
-            else {
-                document.getElementById(route).style.fontWeight = 300;
+        if(currLocation === '/') {
+            document.getElementById('aboutme').style.fontWeight = 800;
+            document.getElementById('experience').style.fontWeight = 300;
+            document.getElementById('work').style.fontWeight = 300;
+            document.getElementById('contact').style.fontWeight = 300;
+
+        }
+        else {
+            for (const route of pages) {
+                let test = props.page.includes(route);
+                if(test) {
+                    document.getElementById(route).style.fontWeight = 800;
+                }
+                else {
+                    document.getElementById(route).style.fontWeight = 300;
+                }
             }
         }
     });
@@ -58,9 +68,9 @@ export function NavBar(props) {
                 <i className="fas fa-bars"></i>
             </div>
                 <div className={click ? 'NavBar-list active' : 'NavBar-list'}>
-                    <Link onClick={closeMobileMenu} to='/aboutme' id='aboutme'>About</Link>
+                    <Link onClick={closeMobileMenu} to='/' id='aboutme'>About</Link>
                     <Link onClick={closeMobileMenu} to='/experience' id='experience'>Experience</Link>
-                    <Link onClick={closeMobileMenu} to='/work' id='work'>Work</Link>
+                    <Link onClick={closeMobileMenu} to='/work' id='work'>My Work</Link>
                     <Link onClick={closeMobileMenu} to='/contact' id='contact'>Contact</Link>
                 </div>
         </nav>

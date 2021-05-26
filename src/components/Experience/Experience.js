@@ -3,7 +3,7 @@ import './Experience.css';
 import '../../../src/index.css'
 
 import { ExperienceCard } from '../ExperienceCard/ExperienceCard';
-import {companies} from './ExperienceData'
+import { companies } from './ExperienceData';
 
 export class Experience extends React.Component {
     render() {
