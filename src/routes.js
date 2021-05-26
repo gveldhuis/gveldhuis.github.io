@@ -4,9 +4,7 @@ import { AboutMe } from './components/AboutMe/AboutMe'
 import { Experience } from './components/Experience/Experience'
 
 import { NavBar } from './components/NavBar/NavBar';
-import { Route, Switch, Redirect, useLocation } from 'react-router-dom';
-
-import medvisionLogo from './components/Experience/medvisionLogo.png'
+import { Route, Switch, useLocation } from 'react-router-dom';
 
 import { ExperienceContent } from './components/ExperienceContent/ExperienceContent'
 import { companies } from './components/Experience/ExperienceData'

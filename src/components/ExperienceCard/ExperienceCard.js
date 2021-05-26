@@ -1,7 +1,7 @@
 import React from 'react';
 import './ExperienceCard.css';
 import '../../../src/index.css'
-import { Route, Switch, Redirect, useLocation, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export class ExperienceCard extends React.Component {
     render() {

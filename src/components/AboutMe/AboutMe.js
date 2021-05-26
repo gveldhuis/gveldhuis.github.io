@@ -1,8 +1,6 @@
 import React from 'react';
 import './AboutMe.css';
 import '../../../src/index.css'
-import headshotImage from './Veldhuis Headshot 1-2.png';
-import favoriteImage from './VeldhuisWallPhoto.png';
 
 export class AboutMe extends React.Component {
     render() {

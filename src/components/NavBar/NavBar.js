@@ -1,14 +1,6 @@
-import React, {useState, useEffect, Component} from 'react';
+import React, {useState, useEffect} from 'react';
 import './NavBar.css';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
-import { Experience404 } from '../404/Experience404'
-import { ExperiencePage } from '../../pages/ExperiencePage/ExperiencePage'
-import { HomePage } from '../../pages/HomePage/HomePage';
+import { Link } from "react-router-dom";
 
 export function NavBar(props) {
 

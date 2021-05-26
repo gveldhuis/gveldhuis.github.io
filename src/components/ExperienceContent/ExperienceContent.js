@@ -1,7 +1,7 @@
 import React from 'react';
 import './ExperienceContent.css';
 import '../../../src/index.css';
-import { Route, Switch, Redirect, useLocation, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export class ExperienceContent extends React.Component {
     render() {
