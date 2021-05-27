@@ -9,6 +9,7 @@ import { Route, Switch, useLocation } from 'react-router-dom';
 
 import { ExperienceContent } from './components/ExperienceContent/ExperienceContent'
 import { companies } from './components/Experience/ExperienceData'
+// import { workProjects } from './components/Work/WorkData'
 
 
 
@@ -36,6 +37,11 @@ export const Routes = () => {
             </Route>
             <Route path='/work'>
                 <Work />
+                {/* {workProjects.map(project => (
+                    <Route path={project.path}>
+                        <WorkContent workblock={project} />
+                    <Route />
+                ))} */}
             </Route>
             <Route path='/contact'>
                 <AboutMe />
