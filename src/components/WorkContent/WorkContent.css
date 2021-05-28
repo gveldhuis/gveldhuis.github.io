@@ -1,0 +1,107 @@
+.WorkContent {
+    background-color: #1340E1;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 22px;
+    line-height: 25px;
+    
+    display: block;
+    overflow: auto;
+    
+    
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 75%;
+    height: 100%;
+    
+    padding: 40px;
+
+}
+
+.WorkContent-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-bottom: 40px;
+}
+
+.fa-times {
+    display: block;
+    position: fixed;
+    right: 80px;
+    top: 50px;
+    cursor: pointer;
+
+    color: white;
+
+    font-size: 2.8rem;
+}
+
+.WorkContent-title {
+    font-size: 55px;
+    font-weight: 600;
+
+    margin-bottom: 10px;
+}
+
+.WorkContent-company {
+    font-size: 30px;
+    font-style: italic;
+
+    margin-bottom: 40px;
+}
+
+.WorkContent-img {
+    width: 400px;
+    height: 300px;
+
+    align-self: center;
+    margin: 40px;
+
+    border-radius: 10px;
+}
+
+.WorkContent-link {
+    display: flex;
+    justify-content: center;
+}
+
+.WorkContent-link a {
+    background-color: white;
+    color: #1340E1;
+    border-radius: 25px;
+    padding: 8px 25px;
+}
+
+
+@media screen and (max-width: 1060px) {
+    .ExperienceContent {
+        display: block;
+        width: 100%;
+        padding-top: 150px;
+    }
+
+    .fa-times {
+        right: 80px;
+        top: 165px;
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ExperienceContent-title {
+        font-size: 45px;
+    }
+
+    .WorkContent-company {
+        font-size: 25px;
+    }
+
+    .fa-times {
+        font-size: 2.0rem;
+    }
+}
+
+/* 1060/768/450 */

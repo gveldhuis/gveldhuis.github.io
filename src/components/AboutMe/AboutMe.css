@@ -49,6 +49,7 @@
 .AboutMe a {
     text-decoration: none;
     color: #1340E1;
+    font-style: bold;
 }
 
 .AboutMe a:hover {

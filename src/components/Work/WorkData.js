@@ -3,7 +3,7 @@ import blueprintsWork from './BlueprintsWork.png'
 import medvisionWork from './medvisionscreencap.png'
 
 class WorkBlock {
-    constructor(projectTitle, company, brief, tech, impact, image, workTag, langTags, link) {
+    constructor(projectTitle, company, brief, tech, impact, image, workTag, langTags, link, path) {
         this.projectTitle = projectTitle;
         this.company = company;
         this.brief = brief;
@@ -13,6 +13,7 @@ class WorkBlock {
         this.workTag = workTag;
         this.langTags = langTags;
         this.link = link;
+        this.path = path;
     }
 }
 
@@ -26,6 +27,7 @@ var medvisionweb = new WorkBlock(
     {name: "Full-Stack Dev", color: "#FFC163"},
     [{name: "React", color: "#63E3FF"}, {name: "Node.js", color: "#32FB11"}],
     "https://www.medvision.ai/",
+    '/work/medvisionweb',
 );
 
 var inventoryapp = new WorkBlock(
@@ -38,6 +40,7 @@ var inventoryapp = new WorkBlock(
     {name: "Product Management", color: "#CC8899"},
     [{name: "React", color: "#63E3FF"}, {name: "Django", color: "#FBC55D"}],
     "https://github.com/gveldhuis/BlueprintsInventoryApp",
+    '/work/inventoryapp',
 );
 
 var atricureapp = new WorkBlock(
@@ -50,6 +53,7 @@ var atricureapp = new WorkBlock(
     {name: "Full-Stack Dev", color: "#FFC163"},
     [{name: "React", color: "#63E3FF"}, {name: "Node.js", color: "#32FB11"}],
     "",
+    '/work/atricureapp',
 );
 
 export let workProjects = [medvisionweb, inventoryapp, atricureapp];
