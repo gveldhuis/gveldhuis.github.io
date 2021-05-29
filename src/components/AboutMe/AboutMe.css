@@ -1,4 +1,4 @@
-#AboutMe {
+#AboutMePage {
     content: " ";
     visibility: none;
     display: block;
@@ -12,15 +12,17 @@
     font-size: 22px;
     line-height: 25px;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 30px;
-    row-gap: 65px;
-    width: 100%;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 1400px;
+    display: block;
+    overflow: auto;
+
+
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 75%;
+    height: 100%;
+
+    padding: 40px;
 }
 
 .AboutMe-header {
@@ -44,7 +46,25 @@
     margin: 20px;
 }
 
-@media screen and (max-width: 1180px) {
+.AboutMe a {
+    text-decoration: none;
+    color: #1340E1;
+    font-style: bold;
+}
+
+.AboutMe a:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1060px) {
+    .AboutMe {
+        display: block;
+        width: 100%;
+        padding-top: 150px;
+    }
+}
+
+/* @media screen and (max-width: 1180px) {
     #AboutMe-headshot, #AboutMe-wall {
         height: 250px;
     }
@@ -79,7 +99,7 @@
         height: 175px;
         width: auto;
     }
-}
+} */
 
 
 

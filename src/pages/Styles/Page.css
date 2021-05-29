@@ -1,0 +1,10 @@
+.Format {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 1060px) {
+    .Format {
+        flex-direction: column;
+    }
+}

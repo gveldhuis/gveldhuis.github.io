@@ -1,27 +1,25 @@
-#Work {
-    content: " ";
-    visibility: none;
-    display: block;
-    margin-top: -80px;
-    padding-top: 80px;   
-}
-
 .Work {
-    background-color: white;
-    color: #1340E1;
+    background: #1340E1;
+    color: white;
     font-family: 'Raleway';
     font-size: 22px;
 
-    margin: 20px auto;
-    padding: 20px;
-    width: 100%;
-}
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 75%;
+    height: 100%;
 
-.Work-container {
+    padding: 40px;
+
+    overflow: scroll;
+
     display: flex;
     flex-direction: column;
-    max-width: 1400px;
+
     margin: auto;
+    margin-top: 20px;
+    padding: 20px;
 }
 
 .Work-blocks {
@@ -30,10 +28,11 @@
     flex-wrap: wrap;
 }
 
-.Work-header {
-    font-size: 82px;
-    font-weight: bold;
-    margin-bottom: 30px;
+@media screen and (max-width: 1060px) {
+    .Work {
+        width: 100%;
+        padding-top: 150px;
+    }
 }
 
 

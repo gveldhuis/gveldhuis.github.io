@@ -1,8 +1,9 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './NavBar.css';
-import '../../../src/index.css'
+import { Link, useLocation } from "react-router-dom";
 
-export function NavBar() {
+export function NavBar(props) {
+
     /*Click state, at top of page state*/
     const [click, setClick] = useState(false);
     const [top, setTop] = useState(true);
@@ -13,60 +14,80 @@ export function NavBar() {
     /*Toggles click state after menu click */
     const handleMobileClick = () => {
         setClick(!click);
-        console.log("THIS IS INSIDE handleMobileClick");
     };
     
 
     /*Toggles Side-Nav Menu Based on Screen Size*/
     const resizeMenu = () => {
         if(window.innerWidth >= 1060) {
-            setClick(false);
-        }
+            setClick(false);      
+        } 
     };
 
     /*Toggles color of NavMenu based on scroll location on page*/
     const toggleNavMenu = () => {
-        if(document.documentElement.scrollTop < 50) {
+        if(window.pageYOffset < 50) {
             setTop(true);
         } else {
             setTop(false);
         }
     }
 
-    /*Creates scrolling event after NavBar link is clicked*/ 
-    function handleLinkClick(event) {
-        event.preventDefault();
+    
 
-        closeMobileMenu();
+    
+    let currLocation = useLocation().pathname;
+    const pages = ['aboutme', 'experience', 'work', 'contact']
 
-        const href = event.target.getAttribute("href");
-        const offsetTop = document.querySelector(href).offsetTop;
+    useEffect(() => {
 
-        
-        
-        window.scrollTo({
-            top: offsetTop,
-            behavior: "smooth",
-        });
+        if(currLocation === '/') {
+            document.getElementById('aboutme').style.fontWeight = 800;
+            document.getElementById('experience').style.fontWeight = 300;
+            document.getElementById('work').style.fontWeight = 300;
+            document.getElementById('contact').style.fontWeight = 300;
 
-    }
+        }
+        else {
+            for (const route of pages) {
+                let test = props.page.includes(route);
+                if(test) {
+                    document.getElementById(route).style.fontWeight = 800;
+                }
+                else {
+                    document.getElementById(route).style.fontWeight = 300;
+                }
+            }
+        }
+    });
 
-    /*Window resizing event listener*/
     window.addEventListener('resize', resizeMenu);
-    window.addEventListener('scroll', toggleNavMenu);
+    // let testVar = document.getElementById('unique2');
+    // console.log(testVar);
+    // testVar.addEventListener('scroll', toggleNavMenu);
 
+    // document.addEventListener('wheel', toggleNavMenu);
+    // window.addEventListener('scroll', toggleNavMenu);
+
+    
+
+
+    
     return (
-        <nav className={top ? 'NavBar' : 'NavBar offset'}>
+        <nav className={top ? 'NavBar' : 'NavBar offset'}> 
             <h1 className='NavBar-nameLogo'>GRANT VELDHUIS</h1>
             <div className='NavBar-menuicon' onClick={handleMobileClick}>
                 <i className="fas fa-bars"></i>
             </div>
-            <div className={click ? 'NavBar-list active' : 'NavBar-list'}>
-                <a href='#AboutMe' onClick={handleLinkClick}>About Me</a>
-                <a href='#Experience' onClick={handleLinkClick}>Experience</a>
-                <a href='#Work' onClick={handleLinkClick}>My Work</a>
-                <a href='#Contact' onClick={handleLinkClick}>Contact</a>
-            </div>
+                <div className={click ? 'NavBar-list active' : 'NavBar-list'}>
+                    <Link onClick={closeMobileMenu} to='/' id='aboutme'>About</Link>
+                    <Link onClick={closeMobileMenu} to='/experience' id='experience'>Experience</Link>
+                    <Link onClick={closeMobileMenu} to='/work' id='work'>My Work</Link>
+                    <Link onClick={closeMobileMenu} to='/contact' id='contact'>Contact</Link>
+                </div>
         </nav>
         );
+
+        
+
 }

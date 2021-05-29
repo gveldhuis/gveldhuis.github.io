@@ -1,0 +1,172 @@
+
+.Work-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 330px;
+
+    margin: 20px;
+
+    background-color: white;
+    color: #1340E1;
+    border-radius: 22px;
+
+    cursor: pointer;
+
+    width: 80%;
+}
+
+.Work-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.Work-card img {
+    width: 220px;
+    height: 166px;
+
+    align-self: center;
+    justify-self: center;
+
+    border-radius: 20px;
+
+    margin-bottom: 30px;
+    margin: 20px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Work-card h3 {
+    font-size: 38px;
+    font-weight: 700;
+
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.Work-card h4 {
+    font-style: italic;
+
+    margin-bottom: 30px;
+}
+
+.Work-tags {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Work-tags span {
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.Work-langtags span {
+    margin-right: 15px;
+}
+
+.Work-tags i {
+    align-self: center;
+}
+
+.Work h5 {
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 960px) {
+    .Work-content h3 {
+        font-size: 30px;
+    }
+
+    .Work-content h4 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    
+    .Work-block img {
+        max-width: 275px;
+    }
+
+    .Work-tags span {
+        font-size: 14px;
+    }
+
+    .Work-img img {
+        width: 190px;
+        height: 136px;
+    }
+
+
+}
+
+@media screen and (max-width: 650px) {
+    .Work-card {
+        flex-direction: column;
+    }
+
+    .Work-img img {
+        width: 200px;
+        height: 156px;
+        margin: 10px;
+    }
+
+    .Work-content {
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .Work-content h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .Work-tags {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* @media screen and (max-width: 768px) {
+    .Work-card {
+        width: 230px;
+        margin: 10px;
+    }
+
+    .Work-card img {
+        width: 200px;
+        height: 146px;
+    
+        align-self: center;
+        justify-self: center;
+    
+        margin-bottom: 30px;
+        margin: 10px;
+    }
+
+    .Work-card h3, .Work-card h4 {
+        font-size: 18px;
+    }
+
+    .Work-tags span {
+        font-size: 16px;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .Work-subheader {
+        font-size: 27px;
+    }
+    
+    .Work-text h3 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+} */

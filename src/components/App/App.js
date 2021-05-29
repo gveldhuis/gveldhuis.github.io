@@ -1,41 +1,15 @@
 import React from 'react';
 import './App.css';
+import '../../index.css'
 
+import { HomePage } from '../../pages/HomePage/HomePage';
 
-
-import { Work } from '../Work/Work';
-import { Skills } from '../Skills/Skills';
-import { Experience } from '../Experience/Experience';
-import { AboutMe } from '../AboutMe/AboutMe';
-import { NavBar } from '../NavBar/NavBar';
-import { Intro } from '../Intro/Intro';
-import Contact from '../Contact/Contact';
-
-/*
-
-
-
-
-*/
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <NavBar />
-        <Intro />
-        <AboutMe />
-        <Experience />
-        <Skills />
-        <Work />
-        <Contact />
-
-
-
-        
-        {/*
-        
-        */}
+        <HomePage />
       </div>
     );
   }
