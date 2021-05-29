@@ -1,5 +1,4 @@
 import React from 'react';
-// import './WorkCard.css';
 import '../../../src/index.css'
 import './WorkContent.css'
 import { Link } from "react-router-dom";

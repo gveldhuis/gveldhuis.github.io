@@ -8,7 +8,7 @@ import { companies } from './ExperienceData';
 export class Experience extends React.Component {
     render() {
         return (
-            <div className="Experience">
+            <div className="Experience" id="experience">
                 <div className="Experience-Items">
                     {companies.map(company => (
                         <ExperienceCard experienceblock={company} />

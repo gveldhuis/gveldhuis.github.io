@@ -26,17 +26,21 @@ export function NavBar(props) {
 
     /*Toggles color of NavMenu based on scroll location on page*/
     const toggleNavMenu = () => {
-        if(document.scrollingElement.scrollTop < 50) {
+        if(window.pageYOffset < 50) {
             setTop(true);
         } else {
             setTop(false);
         }
     }
+
+    
+
     
     let currLocation = useLocation().pathname;
     const pages = ['aboutme', 'experience', 'work', 'contact']
 
     useEffect(() => {
+
         if(currLocation === '/') {
             document.getElementById('aboutme').style.fontWeight = 800;
             document.getElementById('experience').style.fontWeight = 300;
@@ -58,7 +62,15 @@ export function NavBar(props) {
     });
 
     window.addEventListener('resize', resizeMenu);
-    window.addEventListener('scroll', toggleNavMenu)
+    // let testVar = document.getElementById('unique2');
+    // console.log(testVar);
+    // testVar.addEventListener('scroll', toggleNavMenu);
+
+    // document.addEventListener('wheel', toggleNavMenu);
+    // window.addEventListener('scroll', toggleNavMenu);
+
+    
+
 
     
     return (

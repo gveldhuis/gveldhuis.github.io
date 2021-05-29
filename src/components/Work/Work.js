@@ -7,7 +7,7 @@ import { workProjects } from './WorkData';
 export class Work extends React.Component {
     render() {
         return (
-            <div className="Work">
+            <div className="Work" id='work'>
                 <div className="Work-blocks">
                     {workProjects.map(project => (
                         <WorkCard workitem={project} />

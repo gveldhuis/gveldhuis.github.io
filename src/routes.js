@@ -13,14 +13,14 @@ import { companies } from './components/Experience/ExperienceData'
 import { WorkContent } from './components/WorkContent/WorkContent'
 import { workProjects } from './components/Work/WorkData'
 
+import { Contact } from './components/Contact/Contact'
+
 
 
 
 
 export const Routes = () => {
     const location = useLocation().pathname.toString().substring(1);
-
-
 
   return (
     <div>
@@ -46,7 +46,7 @@ export const Routes = () => {
                 ))}
             </Route>
             <Route path='/contact'>
-                <AboutMe />
+                <Contact />
             </Route>
         </Switch>
     </div>
