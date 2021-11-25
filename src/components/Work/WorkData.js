@@ -1,6 +1,6 @@
-import atricureWork from './AtricureWork.png'
-import blueprintsWork from './BlueprintsWork.png'
-import medvisionWork from './medvisionscreencap.png'
+import atricureWork from './AtricureWork.webp'
+import blueprintsWork from './BlueprintsWork.webp'
+import medvisionWork from './medvisionscreencap.webp'
 
 class WorkBlock {
     constructor(projectTitle, company, brief, tech, impact, image, workTag, langTags, link, path) {

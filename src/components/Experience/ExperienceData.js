@@ -1,9 +1,9 @@
-import atricureLogo from './atricureLogo.png';
-import blueprintsLogo from './blueprintsLogo.png';
-import childrensLogo from './cincinnatichildrensLogo.png';
-import michiganLogo from './michiganmedicineLogo.png';
-import medvisionLogo from './medvisionLogo.png';
-import mayoclinicLogo from './mayoclinicLogo2.png';
+import atricureLogo from './atricureLogo.webp';
+import blueprintsLogo from './blueprintsLogo.webp';
+import childrensLogo from './cincinnatichildrensLogo.webp';
+import michiganLogo from './michiganmedicineLogo.webp';
+import medvisionLogo from './medvisionLogo.webp';
+import mayoclinicLogo from './mayoclinicLogo2.webp';
 import ibmLogo from './IBMLogo.webp';
 
 class ExperienceBlock {
