@@ -13,7 +13,7 @@ export class AboutMe extends React.Component {
                     <br></br><br></br>
                     <p>If you couldn’t already tell, I’m a total healthcare nerd. I’m fascinated with how the American health system does (and doesn’t) work and am unbelievably passionate about developing technology that helps make people healthier.</p>
                     <br></br><br></br>
-                    <p>When I’m not pouring over VSCode or geeking out about the most recent healthtech merger, I love backcountry hiking a million miles away from home, play classical music on my keyboard, listening to Daft Punk, or indulging my inner child and building Legos.</p>
+                    <p>When I’m not pouring over VSCode or geeking out about the most recent healthtech merger, I love hiking a million miles away from home, playing classical music on my keyboard, listening to Daft Punk, or indulging my inner child and building Legos.</p>
                     <br></br><br></br>
                     <p>Whether we sound like long-lost twins or share absolutely nothing in common, I’d love to meet you either way. Get in touch with me <b><Link to='/contact' id='contact'>here!</Link></b></p>
                 </div>                
