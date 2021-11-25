@@ -3,7 +3,8 @@ import blueprintsLogo from './blueprintsLogo.png';
 import childrensLogo from './cincinnatichildrensLogo.png';
 import michiganLogo from './michiganmedicineLogo.png';
 import medvisionLogo from './medvisionLogo.png';
-import mayoclinicLogo from './mayoclinicLogo2.png'
+import mayoclinicLogo from './mayoclinicLogo2.png';
+import ibmLogo from './IBMLogo.png';
 
 class ExperienceBlock {
     constructor(logo, company, role, time, explanation, highlights, tags, more, path) {
@@ -18,6 +19,18 @@ class ExperienceBlock {
         this.path = path;
     }
 } 
+
+var ibm = new ExperienceBlock(
+    ibmLogo,
+    "IBM",
+    "Dev. Consultant Intern",
+    "Starting May 2022",
+    "This summer I’ll be in New York City with IBM Consulting, working in the Industrial Market to help F500 clients transform their businesses with technology!",
+    [],
+    [{tag: "Software Dev", color: "green"}, {tag: "Product Mgmt.", color: "purple"}],
+    "https://www.ibm.com/consulting/",
+    '/experience/ibm'
+);
 
 var mayoclinic = new ExperienceBlock(
     mayoclinicLogo,
@@ -60,7 +73,7 @@ var atricure = new ExperienceBlock(
 var blueprints = new ExperienceBlock(
     blueprintsLogo,
     "Blueprints For Pangaea",
-    "CEO, Product Manager",
+    "Chief Executive Officer",
     "Aug. 2019 - Present",
     "Blueprints is a student-run, 501-(c)(3) nonprofit that ships excess medical supplies overseas. Serving as CEO has been the honor of a lifetime, as Blueprints combines my passion for healthcare, love for technology, and drive to create positive efficiency in the world. My favorite moments include...",
     ["Acting as Product Manager for internal web-app, which has won $20,000 in University funding and created 150% operational efficiency increase", 
@@ -97,4 +110,4 @@ var childrens = new ExperienceBlock(
     '/experience/childrens'
 );
 
-export let companies = [mayoclinic, medvision, atricure, blueprints, michiganmedicine, childrens];
+export let companies = [ibm, mayoclinic, medvision, atricure, blueprints, michiganmedicine, childrens];
