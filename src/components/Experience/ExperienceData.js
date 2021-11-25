@@ -4,7 +4,7 @@ import childrensLogo from './cincinnatichildrensLogo.png';
 import michiganLogo from './michiganmedicineLogo.png';
 import medvisionLogo from './medvisionLogo.png';
 import mayoclinicLogo from './mayoclinicLogo2.png';
-import ibmLogo from './IBMLogo.png';
+import ibmLogo from './IBMLogo.webp';
 
 class ExperienceBlock {
     constructor(logo, company, role, time, explanation, highlights, tags, more, path) {
