@@ -6,7 +6,7 @@ export function NavBar(props) {
 
     /*Click state, at top of page state*/
     const [click, setClick] = useState(false);
-    const [top, setTop] = useState(true);
+    // const [top, setTop] = useState(true);
 
     /*On mobile, this function closes NavBar side-menu after link is clicked*/
     const closeMobileMenu = () => setClick(false);
@@ -23,15 +23,6 @@ export function NavBar(props) {
             setClick(false);      
         } 
     };
-
-    /*Toggles color of NavMenu based on scroll location on page*/
-    const toggleNavMenu = () => {
-        if(window.pageYOffset < 50) {
-            setTop(true);
-        } else {
-            setTop(false);
-        }
-    }
 
     
 
@@ -74,7 +65,7 @@ export function NavBar(props) {
 
     
     return (
-        <nav className={top ? 'NavBar' : 'NavBar offset'}> 
+        <nav className='NavBar'> 
             <h1 className='NavBar-nameLogo'>GRANT VELDHUIS</h1>
             <div className='NavBar-menuicon' onClick={handleMobileClick}>
                 <i className="fas fa-bars"></i>
