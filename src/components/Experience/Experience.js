@@ -4,6 +4,7 @@ import '../../../src/index.css'
 
 import { ExperienceCard } from '../ExperienceCard/ExperienceCard';
 import { companies } from './ExperienceData';
+import createReactClass from 'create-react-class';
 
 export class Experience extends React.Component {
     render() {
@@ -14,7 +15,7 @@ export class Experience extends React.Component {
                         <ExperienceCard experienceblock={company} />
                     ))}
                 </div>
-            </div>                
+            </div>   
         );
     }
 }
