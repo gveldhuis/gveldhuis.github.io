@@ -4,7 +4,7 @@ import childrensLogo from './cincinnatichildrensLogo.webp';
 import michiganLogo from './michiganmedicineLogo.webp';
 import medvisionLogo from './medvisionLogo.webp';
 import mayoclinicLogo from './mayoclinicLogo2.webp';
-import ibmLogo from './IBMLogo.webp';
+//import ibmLogo from './IBMLogo.webp';
 
 class ExperienceBlock {
     constructor(logo, company, role, time, explanation, highlights, tags, more, path) {
@@ -20,17 +20,17 @@ class ExperienceBlock {
     }
 } 
 
-var ibm = new ExperienceBlock(
-    ibmLogo,
-    "IBM",
-    "Dev. Consultant Intern",
-    "Starting May 2022",
-    "This summer I’ll be in New York City with IBM Consulting, working in the Industrial Market to help F500 clients transform their businesses with technology!",
-    [],
-    [{tag: "Software Dev", color: "green"}, {tag: "Product Mgmt.", color: "purple"}],
-    "https://www.ibm.com/consulting/",
-    '/experience/ibm'
-);
+// var ibm = new ExperienceBlock(
+//     ibmLogo,
+//     "IBM",
+//     "Dev. Consultant Intern",
+//     "Starting May 2022",
+//     "This summer I’ll be in New York City with IBM Consulting, working in the Industrial Market to help F500 clients transform their businesses with technology!",
+//     [],
+//     [{tag: "Software Dev", color: "green"}, {tag: "Product Mgmt.", color: "purple"}],
+//     "https://www.ibm.com/consulting/",
+//     '/experience/ibm'
+// );
 
 var mayoclinic = new ExperienceBlock(
     mayoclinicLogo,
@@ -110,4 +110,4 @@ var childrens = new ExperienceBlock(
     '/experience/childrens'
 );
 
-export let companies = [ibm, mayoclinic, medvision, atricure, blueprints, michiganmedicine, childrens];
+export let companies = [mayoclinic, medvision, atricure, blueprints, michiganmedicine, childrens];
