@@ -110,4 +110,4 @@ var childrens = new ExperienceBlock(
     '/experience/childrens'
 );
 
-export let companies = [ibm, mayoclinic, medvision, atricure, blueprints, michiganmedicine, childrens];
+export let companies = [mayoclinic, medvision, atricure, blueprints, michiganmedicine, childrens];
