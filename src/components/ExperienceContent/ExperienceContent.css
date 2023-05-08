@@ -61,6 +61,17 @@
     font-size: 20px;
 }
 
+.ExperienceContent-more, .ExperienceContent-more:hover, .ExperienceContent-more:active, .ExperienceContent-more:focus {
+    color: #1340E1;
+    background-color: white;
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin: auto;
+}
+
 @media screen and (max-width: 1060px) {
     .ExperienceContent {
         display: block;

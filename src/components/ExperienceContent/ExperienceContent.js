@@ -19,6 +19,7 @@ export class ExperienceContent extends React.Component {
                         <><li>{highlight}</li><br /></>
                     ))}
                 </b>
+                {this.props.experienceblock.more ? <a href={this.props.experienceblock.more}><h3 className="ExperienceContent-more">Learn More</h3></a> : null}
             </div>                
         );
     }
