@@ -1,32 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.45858b5a.chunk.css",
-    "main.js": "/static/js/main.edbebe23.chunk.js",
-    "main.js.map": "/static/js/main.edbebe23.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.f916c6f4.js",
-    "runtime-main.js.map": "/static/js/runtime-main.f916c6f4.js.map",
-    "static/js/2.9f78d1cd.chunk.js": "/static/js/2.9f78d1cd.chunk.js",
-    "static/js/2.9f78d1cd.chunk.js.map": "/static/js/2.9f78d1cd.chunk.js.map",
-    "static/js/3.a4a6c02f.chunk.js": "/static/js/3.a4a6c02f.chunk.js",
-    "static/js/3.a4a6c02f.chunk.js.map": "/static/js/3.a4a6c02f.chunk.js.map",
+    "main.css": "/static/css/main.6427fe9e.css",
+    "main.js": "/static/js/main.10a35ff5.js",
+    "static/js/377.2147db08.chunk.js": "/static/js/377.2147db08.chunk.js",
+    "static/media/AtricureWork.png": "/static/media/AtricureWork.ae97e93e4f25d28d677d.png",
+    "static/media/blueprintsLogo.png": "/static/media/blueprintsLogo.4b654c0452cbc86c3a59.png",
+    "static/media/BlueprintsWork.png": "/static/media/BlueprintsWork.df0b8ac7cb9ab33e017d.png",
+    "static/media/medvisionscreencap.png": "/static/media/medvisionscreencap.974ea849496dddb5c6bf.png",
+    "static/media/mayoclinicLogo2.png": "/static/media/mayoclinicLogo2.8bc28e44493bad1cb8b2.png",
+    "static/media/cincinnatichildrensLogo.png": "/static/media/cincinnatichildrensLogo.446f0eb41ccf98b99bcd.png",
+    "static/media/michiganmedicineLogo.png": "/static/media/michiganmedicineLogo.3a4147c8c9418d957e85.png",
+    "static/media/atricureLogo.png": "/static/media/atricureLogo.30a0e96840302257e1ef.png",
+    "static/media/medvisionLogo.png": "/static/media/medvisionLogo.46497aa160c883586ec9.png",
     "index.html": "/index.html",
-    "static/css/main.45858b5a.chunk.css.map": "/static/css/main.45858b5a.chunk.css.map",
-    "static/js/2.9f78d1cd.chunk.js.LICENSE.txt": "/static/js/2.9f78d1cd.chunk.js.LICENSE.txt",
-    "static/media/AtricureWork.60dfcb1d.webp": "/static/media/AtricureWork.60dfcb1d.webp",
-    "static/media/BlueprintsWork.4e87d587.webp": "/static/media/BlueprintsWork.4e87d587.webp",
-    "static/media/IBMLogo.a6a70556.webp": "/static/media/IBMLogo.a6a70556.webp",
-    "static/media/atricureLogo.18b45aa6.webp": "/static/media/atricureLogo.18b45aa6.webp",
-    "static/media/blueprintsLogo.39db88b3.webp": "/static/media/blueprintsLogo.39db88b3.webp",
-    "static/media/cincinnatichildrensLogo.7b72e725.webp": "/static/media/cincinnatichildrensLogo.7b72e725.webp",
-    "static/media/mayoclinicLogo2.16566a21.webp": "/static/media/mayoclinicLogo2.16566a21.webp",
-    "static/media/medvisionLogo.0ad74032.webp": "/static/media/medvisionLogo.0ad74032.webp",
-    "static/media/medvisionscreencap.9a1b8e86.webp": "/static/media/medvisionscreencap.9a1b8e86.webp",
-    "static/media/michiganmedicineLogo.e3cd15b8.webp": "/static/media/michiganmedicineLogo.e3cd15b8.webp"
+    "main.6427fe9e.css.map": "/static/css/main.6427fe9e.css.map",
+    "main.10a35ff5.js.map": "/static/js/main.10a35ff5.js.map",
+    "377.2147db08.chunk.js.map": "/static/js/377.2147db08.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.f916c6f4.js",
-    "static/js/2.9f78d1cd.chunk.js",
-    "static/css/main.45858b5a.chunk.css",
-    "static/js/main.edbebe23.chunk.js"
+    "static/css/main.6427fe9e.css",
+    "static/js/main.10a35ff5.js"
   ]
 }
