@@ -1,24 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.6427fe9e.css",
-    "main.js": "/static/js/main.10a35ff5.js",
+    "main.css": "/static/css/main.9cb8a82e.css",
+    "main.js": "/static/js/main.a8e61f01.js",
     "static/js/377.2147db08.chunk.js": "/static/js/377.2147db08.chunk.js",
-    "static/media/AtricureWork.png": "/static/media/AtricureWork.ae97e93e4f25d28d677d.png",
-    "static/media/blueprintsLogo.png": "/static/media/blueprintsLogo.4b654c0452cbc86c3a59.png",
-    "static/media/BlueprintsWork.png": "/static/media/BlueprintsWork.df0b8ac7cb9ab33e017d.png",
-    "static/media/medvisionscreencap.png": "/static/media/medvisionscreencap.974ea849496dddb5c6bf.png",
-    "static/media/mayoclinicLogo2.png": "/static/media/mayoclinicLogo2.8bc28e44493bad1cb8b2.png",
-    "static/media/cincinnatichildrensLogo.png": "/static/media/cincinnatichildrensLogo.446f0eb41ccf98b99bcd.png",
-    "static/media/michiganmedicineLogo.png": "/static/media/michiganmedicineLogo.3a4147c8c9418d957e85.png",
-    "static/media/atricureLogo.png": "/static/media/atricureLogo.30a0e96840302257e1ef.png",
-    "static/media/medvisionLogo.png": "/static/media/medvisionLogo.46497aa160c883586ec9.png",
+    "static/media/blueprintsLogo.webp": "/static/media/blueprintsLogo.39db88b30e3ff8753c72.webp",
+    "static/media/AtricureWork.webp": "/static/media/AtricureWork.60dfcb1d37923caae17d.webp",
+    "static/media/BlueprintsWork.webp": "/static/media/BlueprintsWork.4e87d587ff6bacec330e.webp",
+    "static/media/medvisionscreencap.webp": "/static/media/medvisionscreencap.9a1b8e86fbc19dd3e499.webp",
+    "static/media/michiganmedicineLogo.webp": "/static/media/michiganmedicineLogo.e3cd15b872b651e7d9d3.webp",
+    "static/media/cincinnatichildrensLogo.webp": "/static/media/cincinnatichildrensLogo.7b72e72581fcd49ba299.webp",
+    "static/media/Compass_Dark-6.png": "/static/media/Compass_Dark-6.dc2361646d5e80685b38.png",
+    "static/media/atricureLogo.webp": "/static/media/atricureLogo.18b45aa6b6436673e560.webp",
+    "static/media/medvisionLogo.webp": "/static/media/medvisionLogo.0ad74032a7160892ac31.webp",
+    "static/media/mayoclinicLogo2.webp": "/static/media/mayoclinicLogo2.16566a2188c90556c6a2.webp",
+    "static/media/ribbonlogo": "/static/media/ribbonlogo.6ae6a6de052b5acddf15",
     "index.html": "/index.html",
-    "main.6427fe9e.css.map": "/static/css/main.6427fe9e.css.map",
-    "main.10a35ff5.js.map": "/static/js/main.10a35ff5.js.map",
+    "main.9cb8a82e.css.map": "/static/css/main.9cb8a82e.css.map",
+    "main.a8e61f01.js.map": "/static/js/main.a8e61f01.js.map",
     "377.2147db08.chunk.js.map": "/static/js/377.2147db08.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6427fe9e.css",
-    "static/js/main.10a35ff5.js"
+    "static/css/main.9cb8a82e.css",
+    "static/js/main.a8e61f01.js"
   ]
 }
